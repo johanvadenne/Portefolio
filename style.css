@@ -1,5 +1,3 @@
-
-    
 * {
     margin: 0;
     padding: 0;
@@ -13,20 +11,20 @@ section {
     align-items: center;
 }
 
-.johan {
-    background: linear-gradient(135deg, rgb(49, 21, 177),rgb(188, 55, 206));
+#johan {
+    background: linear-gradient(135deg, rgb(49, 21, 177), rgb(0, 0, 0));
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;  
+    background-size: 100%;
 }
 
-.johan h1 {
+#johan h1 {
     color: white;
     font-size: 6em;
 }
 
-.johan .contenant {
+#johan .contenant {
     opacity: 0;
     position: absolute;
     margin-top: 25%;
@@ -35,8 +33,8 @@ section {
     justify-content: space-around;
 }
 
-.johan .contenant .lien {
-    background: linear-gradient(135deg, rgb(103, 164, 255),rgb(234, 0, 255));
+#johan .contenant .lien {
+    background: linear-gradient(135deg, rgb(103, 164, 255), rgb(234, 0, 255));
     font-size: 1.75em;
     padding: 2%;
     border-radius: 50px;
@@ -44,6 +42,6 @@ section {
     transition: all 0.5s;
 }
 
-.johan .contenant .lien:hover {
+#johan .contenant .lien:hover {
     transform: translateY(-25px);
 }
