@@ -4,6 +4,10 @@
     font-family: Andale Mono, monospace;
 }
 
+body {
+    overflow: hidden;
+}
+
 section {
     height: 100vh;
     display: flex;
@@ -16,12 +20,19 @@ section {
     height: 100vh;
     background-position: 0%;
     background-repeat: no-repeat;
-    transition: background-position 2s ease;
+    background-position: fixed;
 }
 
 #johan h1 {
     color: white;
     font-size: 6em;
+    cursor:default;
+    position: fixed;
+}
+
+#johan h1 span{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
 #johan .contenant {
@@ -47,9 +58,22 @@ section {
 }
 
 #johan .contenant .lien:hover {
-    transform: translateY(25px);
+    transform: translateY(-15px);
+    box-shadow: 0 0 10px white, 0 10px 5px black;
 }
 
 .point {
-    top: 0;
+    display: block;
+    position: absolute;
+    width: 10%;
+    transition: all 0.5s;
+    top: 30%;
+}
+
+#point1 {
+    left: -15%;
+}
+
+#point2 {
+    right: -15%;
 }
