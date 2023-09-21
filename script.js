@@ -1,15 +1,9 @@
 let elementTitre = document.getElementById("titreJohanVadenne");
 let contenantElementsLien = document.getElementById("contenantLien");
+let johan = document.getElementById("johan");
 let menuJohan = document.getElementsByClassName("menuJohan");
 let elementsLien = document.querySelectorAll(".lien");
-
-const elementAccueil = [
-    { id: "qui_je_suis", color: "linear-gradient(135deg, rgb(49, 21, 177), rgb(188, 55, 206))" },
-    { id: "etude_Entreprise", color: "linear-gradient(135deg, rgb(49, 21, 177), rgb(188, 55, 206))" },
-    { id: "projet", color: "linear-gradient(135deg, rgb(49, 21, 177), rgb(188, 55, 206))" },
-    { id: "veille", color: "linear-gradient(135deg, rgb(49, 21, 177), rgb(188, 55, 206))" },
-    { id: "cv", color: "linear-gradient(135deg, rgb(49, 21, 177), rgb(188, 55, 206))" },
-];
+let points = document.getElementsByClassName("point");
 
 function texteMenu() {
     endurscorClignotement(function() { ecritureMenu() });
@@ -44,7 +38,8 @@ function endurscorClignotement(callBack = "") {
 
 function ecritureMenu() {
 
-    const titre = "Johan Vadenne ";
+    const titre = " Johan Vadenne ";
+    const titre2 = "Johan Vadenne";
     let ind = 0;
     let maxInd = titre.length - 1;
     let titreAfficher = "";
@@ -62,8 +57,9 @@ function ecritureMenu() {
         ind++;
         if (ind > maxInd) {
             clearInterval(interval);
-            elementTitre.innerHTML = titre;
+            elementTitre.innerHTML = titre2;
             contenantElementsLien.style.transition = "opacity 0.3s";
+            contenantElementsLien.style.visibility = "visible";
             let interval2 = setInterval(function() {
                 contenantElementsLien.style.opacity = 1;
                 clearInterval(interval2);
@@ -77,13 +73,25 @@ for (let elementLien of elementsLien) {
 
     elementLien.addEventListener("click", function() {
         for (let elementmenuJohan of menuJohan) {
-            elementmenuJohan.style.opacity = 0;
+            let interval = setInterval(function() {
+                elementmenuJohan.style.opacity = 0;
+                clearInterval(interval);
+            }, 100)
         }
     });
 
     elementLien.addEventListener("mouseover", function() {
-        let elementSurvoler = elementLien.id;
-        elementmenuJohan.style.background = elementAccueil[1].color;
+        
+        if ("qui_je_suis" == elementLien.id) {
+            let x = 0;
+            for (let point in points) {
+                x += 100;
+                let interval = setInterval(function() {
+                    points[point].style.top = "-10px"; // Utilisez points[point] pour accéder à chaque élément
+                    clearInterval(interval);
+                }, x);
+            }
+        }
     });
 }
 

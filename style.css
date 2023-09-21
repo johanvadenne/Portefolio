@@ -12,11 +12,11 @@ section {
 }
 
 #johan {
-    background: linear-gradient(135deg, rgb(49, 21, 177), rgb(0, 0, 0));
-    background-position: center;
+    background: linear-gradient(rgb(0, 104, 165),rgb(0, 255, 242));
+    height: 100vh;
+    background-position: 0%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    transition: background-position 2s ease;
 }
 
 #johan h1 {
@@ -31,17 +31,25 @@ section {
     width: 75%;
     display: flex;
     justify-content: space-around;
+    visibility: hidden;
 }
 
 #johan .contenant .lien {
-    background: linear-gradient(135deg, rgb(103, 164, 255), rgb(234, 0, 255));
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
     font-size: 1.75em;
     padding: 2%;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.5s;
+    text-decoration: none;
+    color: black;
+    transition: opacity, all 0.3s;
 }
 
 #johan .contenant .lien:hover {
-    transform: translateY(-25px);
+    transform: translateY(25px);
+}
+
+.point {
+    top: 0;
 }
