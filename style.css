@@ -16,7 +16,7 @@ section {
 }
 
 #johan {
-    background: linear-gradient(rgb(0, 104, 165),rgb(0, 255, 242));
+    background: linear-gradient(rgb(0, 104, 165), rgb(0, 255, 242));
     height: 100vh;
     background-position: 0%;
     background-repeat: no-repeat;
@@ -24,15 +24,27 @@ section {
 }
 
 #johan h1 {
+    position: absolute;
     color: white;
     font-size: 6em;
-    cursor:default;
+    cursor: default;
     position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 1px;
 }
 
-#johan h1 span{
+#johan h1 a {
     writing-mode: vertical-rl;
     text-orientation: upright;
+    width: 3%;
+    color: white;
+    text-decoration: none;
+}
+
+#johan h1 a::first-letter {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #johan .contenant {
@@ -59,7 +71,7 @@ section {
 
 #johan .contenant .lien:hover {
     transform: translateY(-15px);
-    box-shadow: 0 0 10px white, 0 10px 5px black;
+    box-shadow: 0 0 5px white, 0 10px 5px black;
 }
 
 .point {
