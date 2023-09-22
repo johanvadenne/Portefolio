@@ -17,7 +17,6 @@ section {
 
 #johan {
     background: linear-gradient(rgb(0, 104, 165), rgb(0, 255, 242));
-    height: 100vh;
     background-position: 0%;
     background-repeat: no-repeat;
     background-position: fixed;
@@ -31,26 +30,25 @@ section {
     position: fixed;
     width: 100%;
     text-align: center;
-    top: 1px;
+    align-items: center;
 }
 
 #johan h1 a {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
     width: 3%;
     color: white;
     text-decoration: none;
-}
-
-#johan h1 a::first-letter {
     display: inline-block;
-    vertical-align: middle;
+    transition: all 0.5s;
+    transform-origin: left top;
+    white-space: nowrap;
+    writing-mode: initial;
+    text-orientation: upright;
 }
 
 #johan .contenant {
     opacity: 0;
     position: absolute;
-    margin-top: 25%;
+    margin-top: 10%;
     width: 75%;
     display: flex;
     justify-content: space-around;
@@ -82,10 +80,50 @@ section {
     top: 30%;
 }
 
+.etude_Entreprise_icone {
+    display: block;
+    position: absolute;
+    width: 15%;
+    transition: all 0.5s;
+    top: 30%;
+}
+
 #point1 {
     left: -15%;
 }
 
 #point2 {
+    right: -15%;
+}
+
+#etude_entreprise1 {
+    left: -15%;
+}
+
+#etude_entreprise2 {
+    right: -15%;
+}
+
+#projet1 {
+    left: -15%;
+}
+
+#projet2 {
+    right: -15%;
+}
+
+#veille1 {
+    left: -15%;
+}
+
+#veille2 {
+    right: -15%;
+}
+
+#cv1 {
+    left: -15%;
+}
+
+#cv2 {
     right: -15%;
 }

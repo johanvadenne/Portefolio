@@ -7,32 +7,18 @@ let lettresTitre = document.getElementsByClassName("lettre");
 let points = document.getElementsByClassName("point");
 const point1 = document.getElementById("point1")
 const point2 = document.getElementById("point2")
+const etude_entreprise1 = document.getElementById("etude_entreprise1")
+const etude_entreprise2 = document.getElementById("etude_entreprise2")
+const projet1 = document.getElementById("projet1")
+const projet2 = document.getElementById("projet2")
+const veille1 = document.getElementById("veille1")
+const veille2 = document.getElementById("veille2")
+const cv1 = document.getElementById("cv1")
+const cv2 = document.getElementById("cv2")
 
 function texteMenu() {
     endurscorClignotement(function() { ecritureMenu() });
 }
-
-const lettreTexte = [
-    { "idLettre": "J", "texte": "Java", "lien": "https://fr.wikipedia.org/wiki/Java_(langage)" },
-    { "idLettre": "J", "texte": "JavaScript", "lien": "https://developer.mozilla.org/fr/docs/Web/JavaScript" },
-    { "idLettre": "J", "texte": "JSON", "lien": "https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/JSON" },
-    { "idLettre": "J", "texte": "JVM", "lien": "https://fr.wikipedia.org/wiki/Machine_virtuelle_Java" },
-    { "idLettre": "J", "texte": "jQuery", "lien": "https://jquery.com/" },
-    { "idLettre": "J", "texte": "Jenkins", "lien": "https://www.jenkins.io/" },
-    { "idLettre": "J", "texte": "JUnit", "lien": "https://junit.org/junit4/" },
-    { "idLettre": "J", "texte": "Jupyter", "lien": "https://jupyter.org/" },
-    { "idLettre": "J", "texte": "JavaScript Frameworks", "lien": "https://developer.mozilla.org/fr/docs/Web/JavaScript/Frameworks" },
-    { "idLettre": "J", "texte": "Jitter", "lien": "https://fr.wikipedia.org/wiki/Jitter" },
-    { "idLettre": "J", "texte": "JWT", "lien": "https://jwt.io/" },
-    { "idLettre": "J", "texte": "JavaScript Debugging", "lien": "https://developer.mozilla.org/fr/docs/Learn/Tools_and_testing/Cross_browser_testing/Debugging_JavaScript" },
-    { "idLettre": "J", "texte": "Java Beans", "lien": "https://fr.wikipedia.org/wiki/JavaBeans" },
-    { "idLettre": "J", "texte": "Joindre", "lien": "https://fr.wiktionary.org/wiki/joindre" },
-    { "idLettre": "J", "texte": "JavaScript Library", "lien": "https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Library" },
-    { "idLettre": "J", "texte": "Java EE", "lien": "https://fr.wikipedia.org/wiki/Java_EE" },
-    { "idLettre": "J", "texte": "JavaScript Promise", "lien": "https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise" },
-    { "idLettre": "J", "texte": "Job Queue", "lien": "https://developer.mozilla.org/fr/docs/Web/API/HTML_DOM_API/MutationObserver" },
-    { "idLettre": "J", "texte": "JavaScript ES6", "lien": "https://developer.mozilla.org/fr/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla" },
-];
 
 function endurscorClignotement(callBack = "") {
 
@@ -94,7 +80,6 @@ function ecritureMenu() {
             contenantElementsLien.style.top = contenantElementsLien.offsetTop + "px";
             let interval2 = setInterval(function() {
                 contenantElementsLien.style.opacity = 1;
-                ecouteurLettre();
                 clearInterval(interval2);
             }, 500)
         }
@@ -114,17 +99,61 @@ for (let elementLien of elementsLien) {
     });
 
     elementLien.addEventListener("mouseover", function() {
+        console.log(elementLien.id)
 
-        if ("qui_je_suis" == elementLien.id) {
-            pointDInterrogation(true);
+        switch (elementLien.id) {
+            case "qui_je_suis":
+                pointDInterrogation(true);
+                break;
+
+            case "etude_Entreprise":
+                afficheEtude(true);
+                break;
+
+            case "projet":
+                afficheProjet(true);
+                break;
+
+            case "veille":
+                afficheVeille(true);
+                break;
+
+            case "cv":
+                afficheCv(true);
+                break;
+        
+            default:
+                break;
         }
     });
 
     elementLien.addEventListener("mouseout", function() {
+        console.log(elementLien.id)
+        switch (elementLien.id) {
+            case "qui_je_suis":
+                pointDInterrogation(false);
+                break;
 
-        if ("qui_je_suis" == elementLien.id) {
-            pointDInterrogation(false);
+            case "etude_Entreprise":
+                afficheEtude(false);
+                break;
+
+            case "projet":
+                afficheProjet(false);
+                break;
+
+            case "veille":
+                afficheVeille(false);
+                break;
+
+            case "cv":
+                afficheCv(false);
+                break;
+        
+            default:
+                break;
         }
+
     });
 }
 
@@ -143,28 +172,64 @@ function pointDInterrogation(afficher) {
     }
 }
 
-function ecouteurLettre() {
-    console.log("lettre.id");
-    for (let lettre of lettresTitre) {
-        console.log(lettre.id);
-        lettre.addEventListener("mouseover", function() {
-            console.log(lettre.id);
-            let nombreLettre = -1;
-            let tabIndLettre = [];
-            lettreTexte.forEach(element => {
-                console.log(element.idLettre + " " + lettre.id);
-                if (element.idLettre == lettre.id) {
-                    nombreLettre++;
-                    tabIndLettre.push(nombreLettre);
-                }
-            });
-            lettre.style.position = "relative";
-            lettre.style.top = lettre.offsetBottom + "px";
-            lettre.innerHTML = lettreTexte[tabIndLettre[entierAleatoire(nombreLettre)]].texte.split('').reverse().join('');
-            console.log(contenantElementsLien.offsetTop);
-        });
+function afficheEtude(afficher) {
+    console.log("j  ")
+    if (afficher) {
+        etude_entreprise1.style.left = "0"
+        etude_entreprise2.style.right = "0"
+        etude_entreprise1.style.rotate = "25deg"
+        etude_entreprise2.style.rotate = "-25deg"
+    } else {
+        etude_entreprise1.style.left = "-15%"
+        etude_entreprise2.style.right = "-15%"
+        etude_entreprise1.style.rotate = "0deg"
+        etude_entreprise2.style.rotate = "0deg"
     }
-    console.log("lettre.id");
+}
+
+function afficheProjet(afficher) {
+    console.log("j  ")
+    if (afficher) {
+        projet1.style.left = "0"
+        projet2.style.right = "0"
+        projet1.style.rotate = "25deg"
+        projet2.style.rotate = "-25deg"
+    } else {
+        projet1.style.left = "-15%"
+        projet2.style.right = "-15%"
+        projet1.style.rotate = "0deg"
+        projet2.style.rotate = "0deg"
+    }
+}
+
+function afficheVeille(afficher) {
+    console.log("j  ")
+    if (afficher) {
+        veille1.style.left = "0"
+        veille2.style.right = "0"
+        veille1.style.rotate = "25deg"
+        veille2.style.rotate = "-25deg"
+    } else {
+        veille1.style.left = "-15%"
+        veille2.style.right = "-15%"
+        veille1.style.rotate = "0deg"
+        veille2.style.rotate = "0deg"
+    }
+}
+
+function afficheCv(afficher) {
+    console.log("j  ")
+    if (afficher) {
+        cv1.style.left = "0"
+        cv2.style.right = "0"
+        cv1.style.rotate = "25deg"
+        cv2.style.rotate = "-25deg"
+    } else {
+        cv1.style.left = "-15%"
+        cv2.style.right = "-15%"
+        cv1.style.rotate = "0deg"
+        cv2.style.rotate = "0deg"
+    }
 }
 
 // FR: donne un entier aléatoire de 0 au nombre envoyé en paramètre
