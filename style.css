@@ -1,28 +1,29 @@
+/**** all ****/
+
 * {
     margin: 0;
     padding: 0;
     font-family: Andale Mono, monospace;
 }
 
+/**** menu ****/
+
 body {
     overflow: hidden;
 }
 
-section {
+#menu_johan {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#johan {
     background: linear-gradient(rgb(0, 104, 165), rgb(0, 255, 242));
     background-position: 0%;
     background-repeat: no-repeat;
     background-position: fixed;
 }
 
-#johan h1 {
+#menu_johan #titre_johan_vadenne {
     position: absolute;
     color: white;
     font-size: 6em;
@@ -33,7 +34,7 @@ section {
     align-items: center;
 }
 
-#johan h1 a {
+#menu_johan #titre_johan_vadenne a {
     width: 3%;
     color: white;
     text-decoration: none;
@@ -45,17 +46,17 @@ section {
     text-orientation: upright;
 }
 
-#johan .contenant {
+#menu_johan #contenant_lien_accueille {
     opacity: 0;
     position: absolute;
-    margin-top: 10%;
+    margin-top: 25%;
     width: 75%;
     display: flex;
     justify-content: space-around;
     visibility: hidden;
 }
 
-#johan .contenant .lien {
+#menu_johan #contenant_lien_accueille .lien {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(15px);
     font-size: 1.75em;
@@ -67,63 +68,23 @@ section {
     transition: opacity, all 0.3s;
 }
 
-#johan .contenant .lien:hover {
+#menu_johan #contenant_lien_accueille .lien:hover {
     transform: translateY(-15px);
     box-shadow: 0 0 5px white, 0 10px 5px black;
 }
 
-.point {
+.image_cote {
     display: block;
     position: absolute;
-    width: 10%;
+    height: 30vh;
     transition: all 0.5s;
     top: 30%;
 }
 
-.etude_Entreprise_icone {
-    display: block;
-    position: absolute;
-    width: 15%;
-    transition: all 0.5s;
-    top: 30%;
+#menu_johan #image_gauche .image_cote {
+    left:-15%;
 }
 
-#point1 {
-    left: -15%;
-}
-
-#point2 {
-    right: -15%;
-}
-
-#etude_entreprise1 {
-    left: -15%;
-}
-
-#etude_entreprise2 {
-    right: -15%;
-}
-
-#projet1 {
-    left: -15%;
-}
-
-#projet2 {
-    right: -15%;
-}
-
-#veille1 {
-    left: -15%;
-}
-
-#veille2 {
-    right: -15%;
-}
-
-#cv1 {
-    left: -15%;
-}
-
-#cv2 {
-    right: -15%;
+#menu_johan #image_droite .image_cote {
+    right:-15%;
 }
