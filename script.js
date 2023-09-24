@@ -1,8 +1,11 @@
 // init
 const titreJohanVadenne = document.getElementById("titre_johan_vadenne")
+const imagesDroite = document.getElementById("image_droite")
+const imageGauches = document.getElementById("image_gauche")
+const pageQuiJeSuis = document.getElementById("page_qui_je_suis")
 const contenantElementsLien = document.getElementById("contenant_lien_accueille");
-const sectionMenu = document.getElementById("menu_johan");
-let elementsLien = document.querySelectorAll(".lien");
+const menuJohan = document.getElementsByClassName("accueille");
+const elementsLien = document.querySelectorAll(".lien");
 const tempsCliglotementEndurscor = 500;
 const endurscor = "<a>_</a>";
 const titreAccueille = "Johan Vadenne";
@@ -37,9 +40,6 @@ function ecritureTexte(elementTexte, texteAEcrire) {
     let texte = "";
     let indTexte = 0;
     let maxInd = texteAEcrire.length - 1;
-    let titreAfficher = "";
-    let titreEnCours = "";
-    let undurscors = "_";
 
     let interval = setInterval(function() {
 
@@ -71,14 +71,26 @@ function ecouteur() {
     for (let lien of elementsLien) {
 
         lien.addEventListener("click", function() {
-
-            for (let i = 0; i < sectionMenu.childNodes.length; i++) {
-                const enfantMenu = sectionMenu.childNodes[i];
             
-                if (enfantMenu.nodeType === 1) {
-                    enfantMenu.style.opacity = 0;
-                }
+            const imageGauche = document.getElementById(lien.id + "1");
+            const imagedroite = document.getElementById(lien.id + "2");
+            
+            imageGauche.style.top = "-35%"
+            imagedroite.style.top = "-35%"
+            imageGauche.style.rotate = "260deg"
+            imagedroite.style.rotate = "-260deg"
+
+            for (element of menuJohan) {
+                element.style.opacity = 0;
             }
+
+            let interval = setInterval(function() {
+                imagesDroite.style.visibility = "hidden";
+                imageGauches.style.visibility = "hidden";
+                pageQuiJeSuis.style.opacity = 1;
+                pageQuiJeSuis.style.zIndex = 1;
+                clearInterval(interval);
+            }, 500)
             
         });
 

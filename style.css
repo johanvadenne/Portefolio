@@ -88,3 +88,27 @@ body {
 #menu_johan #image_droite .image_cote {
     right:-15%;
 }
+
+/**** qui_je_suis ****/
+
+#page_qui_je_suis {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+
+#page_qui_je_suis #contentant_texte {
+    width: 75%;
+}
+
+#page_qui_je_suis #contentant_texte {
+    color: white;
+    font-size: 170%;
+}
