@@ -82,6 +82,30 @@ function ecouteur() {
             
         });
 
+        lien.addEventListener("mouseover", function() {
+            
+            const imageGauche = document.getElementById(lien.id + "1");
+            const imagedroite = document.getElementById(lien.id + "2");
+            
+            imageGauche.style.left = "0"
+            imagedroite.style.right = "0"
+            imageGauche.style.rotate = "25deg"
+            imagedroite.style.rotate = "-25deg"
+            
+        });
+
+        lien.addEventListener("mouseout", function() {
+            
+            const imageGauche = document.getElementById(lien.id + "1");
+            const imagedroite = document.getElementById(lien.id + "2");
+            
+            imageGauche.style.left = "-15%"
+            imagedroite.style.right = "-15%"
+            imageGauche.style.rotate = "0deg"
+            imagedroite.style.rotate = "0deg"
+            
+        });
+
     }
 }
 
