@@ -6,6 +6,7 @@
     font-family: Andale Mono, monospace;
 }
 
+
 /**** menu ****/
 
 body {
@@ -82,12 +83,13 @@ body {
 }
 
 #menu_johan #image_gauche .image_cote {
-    left:-15%;
+    left: -15%;
 }
 
 #menu_johan #image_droite .image_cote {
-    right:-15%;
+    right: -15%;
 }
+
 
 /**** qui_je_suis ****/
 
@@ -102,6 +104,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s;
     z-index: -1;
+    width: 100%;
 }
 
 #page_qui_je_suis #contentant_texte {

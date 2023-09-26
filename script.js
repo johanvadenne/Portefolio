@@ -3,18 +3,31 @@ const titreJohanVadenne = document.getElementById("titre_johan_vadenne")
 const imagesDroite = document.getElementById("image_droite")
 const imageGauches = document.getElementById("image_gauche")
 const pageQuiJeSuis = document.getElementById("page_qui_je_suis")
+const texteQuiJeSuis = document.getElementById("texte_qui_je_suis")
 const contenantElementsLien = document.getElementById("contenant_lien_accueille");
 const menuJohan = document.getElementsByClassName("accueille");
 const elementsLien = document.querySelectorAll(".lien");
 const tempsCliglotementEndurscor = 500;
 const endurscor = "<a>_</a>";
 const titreAccueille = "Johan Vadenne";
+const texteAEcrireQuiJeSuis = `
+Bonjour👋, je m'appelle Johan.\n
+Je suis un véritable passionné d'informatique, que ce soit la programmation, le web, les logiciels, ou encore la cybersécurité... 
+Je suis toujours avide de nouvelles connaissances et de découvertes !\n
+
+J'ai obtenu un BAC PRO SN (Systèmes Numériques) et je suis actuellement en BTS SIO (Services Informatiques aux Organisations) 
+avec l'option SLAM (Solutions Logicielles et Applications Métiers). Je travaille constamment sur des projets personnels, 
+qu'il s'agisse de créer des logiciels, des jeux vidéo, ou même d'explorer des défis tels que la création de ma propre IA ou mon propre langage informatique.\n
+
+En résumé, si je devais me décrire en trois mots, je dirais : passionné, ambitieux et persévérant. 
+Actuellement, je réalise des recherches pour orienter ma carrière vers la cybersécurité, en mettant l'accent sur la programmation.
+`
 
 function endurscorClignoter(elementTexte, nbrClignotemment, fonction = "") {
     const elementTexteSansEndurscor = elementTexte.innerHTML;
     let endurscorVisible = true;
     let indClignotement = 0;
-    nbrClignotemment*=2;
+    nbrClignotemment *= 2;
 
     let interval = setInterval(function() {
         if (endurscorVisible) {
@@ -33,7 +46,7 @@ function endurscorClignoter(elementTexte, nbrClignotemment, fonction = "") {
     }, 300)
 }
 
-function ecritureTexte(elementTexte, texteAEcrire) {
+function ecritureTexteMenu(elementTexte, texteAEcrire) {
     const balise = "a"
     let premierCharactere = true;
     let texteFinale = "";
@@ -46,8 +59,7 @@ function ecritureTexte(elementTexte, texteAEcrire) {
         if (premierCharactere) {
             elementTexte.innerHTML = elementTexte.innerHTML + `<${balise}> </${balise}>` + endurscor;
             premierCharactere = false;
-        }
-        else {
+        } else {
             texte = `<${balise}>${texteAEcrire[indTexte]}</${balise}>`;
             texteFinale += texte;
             elementTexte.innerHTML = " " + texteFinale + endurscor;
@@ -67,14 +79,29 @@ function ecritureTexte(elementTexte, texteAEcrire) {
     }, 100)
 }
 
+function ecritureTexteQuiJeSuis(elementTexte, texteAEcrire) {
+    let indTexte = 0;
+    let br = "";
+
+    let interval = setInterval(function() {
+        if (texteAEcrire[indTexte] == "\n") {
+            br = "<br>";
+        } else {
+            br = "";
+        }
+        elementTexte.innerHTML += texteAEcrire[indTexte] + br;
+        indTexte++;
+    }, 5)
+}
+
 function ecouteur() {
     for (let lien of elementsLien) {
 
         lien.addEventListener("click", function() {
-            
+
             const imageGauche = document.getElementById(lien.id + "1");
             const imagedroite = document.getElementById(lien.id + "2");
-            
+
             imageGauche.style.top = "-35%"
             imagedroite.style.top = "-35%"
             imageGauche.style.rotate = "260deg"
@@ -89,37 +116,38 @@ function ecouteur() {
                 imageGauches.style.visibility = "hidden";
                 pageQuiJeSuis.style.opacity = 1;
                 pageQuiJeSuis.style.zIndex = 1;
+                ecritureTexteQuiJeSuis(texteQuiJeSuis, texteAEcrireQuiJeSuis);
                 clearInterval(interval);
             }, 500)
-            
+
         });
 
         lien.addEventListener("mouseover", function() {
-            
+
             const imageGauche = document.getElementById(lien.id + "1");
             const imagedroite = document.getElementById(lien.id + "2");
-            
+
             imageGauche.style.left = "0"
             imagedroite.style.right = "0"
             imageGauche.style.rotate = "25deg"
             imagedroite.style.rotate = "-25deg"
-            
+
         });
 
         lien.addEventListener("mouseout", function() {
-            
+
             const imageGauche = document.getElementById(lien.id + "1");
             const imagedroite = document.getElementById(lien.id + "2");
-            
+
             imageGauche.style.left = "-15%"
             imagedroite.style.right = "-15%"
             imageGauche.style.rotate = "0deg"
             imagedroite.style.rotate = "0deg"
-            
+
         });
 
     }
 }
 
-endurscorClignoter(titreJohanVadenne, 4, function() { ecritureTexte(titreJohanVadenne, titreAccueille) });
+endurscorClignoter(titreJohanVadenne, 4, function() { ecritureTexteMenu(titreJohanVadenne, titreAccueille) });
 ecouteur();
