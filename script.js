@@ -82,16 +82,25 @@ function ecritureTexteMenu(elementTexte, texteAEcrire) {
 function ecritureTexteQuiJeSuis(elementTexte, texteAEcrire) {
     let indTexte = 0;
     let br = "";
+    let tempsIntervale = 5;
 
     let interval = setInterval(function() {
-        if (texteAEcrire[indTexte] == "\n") {
+        tempsIntervale += 5;
+        if(indTexte == texteAEcrire.length - 1) {
+            clearInterval(interval);
+        }
+        else if(texteAEcrire[indTexte] == "\n") {
             br = "<br>";
-        } else {
+        }
+        else if(texteAEcrire[indTexte] == ",") {
+        }
+        else {
             br = "";
         }
+        
         elementTexte.innerHTML += texteAEcrire[indTexte] + br;
         indTexte++;
-    }, 5)
+    }, tempsIntervale)
 }
 
 function ecouteur() {
