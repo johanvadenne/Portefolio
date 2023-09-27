@@ -10,8 +10,8 @@ const elementsLien = document.querySelectorAll(".lien");
 const tempsCliglotementEndurscor = 500;
 const endurscor = "<a>_</a>";
 const titreAccueille = "Johan Vadenne";
-const texteAEcrireQuiJeSuis = `
-Bonjour👋, je m'appelle Johan.\n
+const texteAEcrireQuiJeSuis = 
+`Bonjour👋, je m'appelle Johan.\n
 Je suis un véritable passionné d'informatique, que ce soit la programmation, le web, les logiciels, ou encore la cybersécurité... 
 Je suis toujours avide de nouvelles connaissances et de découvertes !\n
 
@@ -20,8 +20,7 @@ avec l'option SLAM (Solutions Logicielles et Applications Métiers). Je travaill
 qu'il s'agisse de créer des logiciels, des jeux vidéo, ou même d'explorer des défis tels que la création de ma propre IA ou mon propre langage informatique.\n
 
 En résumé, si je devais me décrire en trois mots, je dirais : passionné, ambitieux et persévérant. 
-Actuellement, je réalise des recherches pour orienter ma carrière vers la cybersécurité, en mettant l'accent sur la programmation.
-`
+Actuellement, je réalise des recherches pour orienter ma carrière vers la cybersécurité, en mettant l'accent sur la programmation.`
 
 function endurscorClignoter(elementTexte, nbrClignotemment, fonction = "") {
     const elementTexteSansEndurscor = elementTexte.innerHTML;
@@ -82,10 +81,8 @@ function ecritureTexteMenu(elementTexte, texteAEcrire) {
 function ecritureTexteQuiJeSuis(elementTexte, texteAEcrire) {
     let indTexte = 0;
     let br = "";
-    let tempsIntervale = 5;
 
     let interval = setInterval(function() {
-        tempsIntervale += 5;
         if(indTexte == texteAEcrire.length - 1) {
             clearInterval(interval);
         }
@@ -93,6 +90,20 @@ function ecritureTexteQuiJeSuis(elementTexte, texteAEcrire) {
             br = "<br>";
         }
         else if(texteAEcrire[indTexte] == ",") {
+            clearInterval(interval);
+            let interval2 = setInterval(function() {
+            clearInterval(interval2);
+            console.log(texteAEcrire.slice(indTexte+1, texteAEcrire.length));
+            ecritureTexteQuiJeSuis(elementTexte, texteAEcrire.slice(indTexte, texteAEcrire.length));
+            }, 200);
+        }
+        else if(texteAEcrire[indTexte] == ".") {
+            clearInterval(interval);
+            let interval2 = setInterval(function() {
+            clearInterval(interval2);
+            console.log(texteAEcrire.slice(indTexte+1, texteAEcrire.length));
+            ecritureTexteQuiJeSuis(elementTexte, texteAEcrire.slice(indTexte, texteAEcrire.length));
+            }, 500);
         }
         else {
             br = "";
@@ -100,7 +111,7 @@ function ecritureTexteQuiJeSuis(elementTexte, texteAEcrire) {
         
         elementTexte.innerHTML += texteAEcrire[indTexte] + br;
         indTexte++;
-    }, tempsIntervale)
+    }, 50)
 }
 
 function ecouteur() {
