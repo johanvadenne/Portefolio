@@ -1,3 +1,64 @@
+.switch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.switch input[type="checkbox"] {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px rgb(55, 55, 55), 0 0 0 5px rgb(65, 65, 65), inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.switch input:checked[type="checkbox"] {
+    background: linear-gradient(0deg, cyan, rgb(0, 200, 200));
+    box-shadow: 0 0 2px rgb(0, 100, 100), 0 0 0 4px rgb(55, 55, 55), 0 0 0 5px rgb(65, 65, 65), inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.switch input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(0deg, #000, #333);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #000;
+    transform: scale(0.98, 0.96);
+    transition: 0.5s;
+}
+
+.switch input:checked[type="checkbox"]:before {
+    left: 40px;
+}
+
+.switch input[type="checkbox"]:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 65px;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(0deg, rgb(200, 200, 200), rgb(0, 0, 0));
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.switch input:checked[type="checkbox"]:after {
+    background: rgb(0, 200, 200);
+    left: 105px;
+    box-shadow: 0 0 5px cyan, 0 0 15px cyan;
+}
+
+
 /**** all ****/
 
 * {
@@ -115,3 +176,6 @@ body {
     color: white;
     font-size: 170%;
 }
+
+
+/*  SWITCH  */

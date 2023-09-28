@@ -10,8 +10,8 @@ const elementsLien = document.querySelectorAll(".lien");
 const tempsCliglotementEndurscor = 500;
 const endurscor = "<a>_</a>";
 const titreAccueille = "Johan Vadenne";
-const texteAEcrireQuiJeSuis = 
-`Bonjour👋, je m'appelle Johan.\n
+const texteAEcrireQuiJeSuis =
+    `Bonjour👋, je m'appelle Johan.\n
 Je suis un véritable passionné d'informatique, que ce soit la programmation, le web, les logiciels, ou encore la cybersécurité... 
 Je suis toujours avide de nouvelles connaissances et de découvertes !\n
 
@@ -83,35 +83,31 @@ function ecritureTexteQuiJeSuis(elementTexte, texteAEcrire) {
     let br = "";
 
     let interval = setInterval(function() {
-        if(indTexte == texteAEcrire.length - 1) {
+        if (indTexte == texteAEcrire.length - 1) {
             clearInterval(interval);
-        }
-        else if(texteAEcrire[indTexte] == "\n") {
+        } else if (texteAEcrire[indTexte] == "\n") {
             br = "<br>";
-        }
-        else if(texteAEcrire[indTexte] == ",") {
+        } else if (texteAEcrire[indTexte] == ",") {
             clearInterval(interval);
             let interval2 = setInterval(function() {
-            clearInterval(interval2);
-            console.log(texteAEcrire.slice(indTexte+1, texteAEcrire.length));
-            ecritureTexteQuiJeSuis(elementTexte, texteAEcrire.slice(indTexte, texteAEcrire.length));
+                clearInterval(interval2);
+                console.log(texteAEcrire.slice(indTexte + 1, texteAEcrire.length));
+                ecritureTexteQuiJeSuis(elementTexte, texteAEcrire.slice(indTexte, texteAEcrire.length));
             }, 200);
-        }
-        else if(texteAEcrire[indTexte] == ".") {
+        } else if (texteAEcrire[indTexte] == ".") {
             clearInterval(interval);
             let interval2 = setInterval(function() {
-            clearInterval(interval2);
-            console.log(texteAEcrire.slice(indTexte+1, texteAEcrire.length));
-            ecritureTexteQuiJeSuis(elementTexte, texteAEcrire.slice(indTexte, texteAEcrire.length));
+                clearInterval(interval2);
+                console.log(texteAEcrire.slice(indTexte + 1, texteAEcrire.length));
+                ecritureTexteQuiJeSuis(elementTexte, texteAEcrire.slice(indTexte, texteAEcrire.length));
             }, 500);
-        }
-        else {
+        } else {
             br = "";
         }
-        
+
         elementTexte.innerHTML += texteAEcrire[indTexte] + br;
         indTexte++;
-    }, 50)
+    }, 30)
 }
 
 function ecouteur() {
