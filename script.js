@@ -6,6 +6,7 @@ const pageQuiJeSuis = document.getElementById("page_qui_je_suis")
 const texteQuiJeSuis = document.getElementById("texte_qui_je_suis")
 const contenantElementsLien = document.getElementById("contenant_lien_accueille");
 const menuJohan = document.getElementsByClassName("accueille");
+const switch_ = document.getElementById("switch");
 const elementsLien = document.querySelectorAll(".lien");
 const tempsCliglotementEndurscor = 500;
 const endurscor = "<a>_</a>";
@@ -79,6 +80,10 @@ function ecritureTexteMenu(elementTexte, texteAEcrire) {
 }
 
 function ecritureTexteQuiJeSuis(elementTexte, texteAEcrire) {
+    if (switch_.checked == true) {
+        elementTexte.innerHTML = texteAEcrireQuiJeSuis.replace("\n", "<br>");
+        return;
+    }
     let indTexte = 0;
     let br = "";
 

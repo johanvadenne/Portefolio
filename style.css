@@ -125,12 +125,14 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 10;
 }
 
 input[type=checkbox]{
 	height: 0;
 	width: 0;
 	visibility: hidden;
+    z-index: 10;
 }
 
 label {
@@ -144,6 +146,7 @@ label {
     position: absolute;
     right: 0.5%;
     top: 0.5%;
+    z-index: 10;
 }
 
 label:after {
