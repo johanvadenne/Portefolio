@@ -12,7 +12,7 @@ const tempsCliglotementEndurscor = 500;
 const endurscor = "<a>_</a>";
 const titreAccueille = "Johan Vadenne";
 const texteAEcrireQuiJeSuis =
-    `Bonjour👋, je m'appelle Johan.\n
+`Bonjour👋, je m'appelle Johan.\n
 Je suis un véritable passionné d'informatique, que ce soit la programmation, le web, les logiciels, ou encore la cybersécurité... 
 Je suis toujours avide de nouvelles connaissances et de découvertes !\n
 
@@ -47,6 +47,10 @@ function endurscorClignoter(elementTexte, nbrClignotemment, fonction = "") {
 }
 
 function ecritureTexteMenu(elementTexte, texteAEcrire) {
+    if (switch_.checked == true) {
+        elementTexte.innerHTML = texteAEcrire;
+        return;
+    }
     const balise = "a"
     let premierCharactere = true;
     let texteFinale = "";
@@ -81,7 +85,7 @@ function ecritureTexteMenu(elementTexte, texteAEcrire) {
 
 function ecritureTexteQuiJeSuis(elementTexte, texteAEcrire) {
     if (switch_.checked == true) {
-        elementTexte.innerHTML = texteAEcrireQuiJeSuis.replace("\n", "<br>");
+        elementTexte.innerHTML = texteAEcrireQuiJeSuis.replace(/\n/g, "<br>");
         return;
     }
     let indTexte = 0;
