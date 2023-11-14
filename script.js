@@ -49,8 +49,15 @@ function endurscorClignoter(elementTexte, nbrClignotemment, fonction = "") {
 function ecritureTexteMenu(elementTexte, texteAEcrire) {
     if (switch_.checked == true) {
         elementTexte.innerHTML = texteAEcrire;
+        contenantElementsLien.style.transition = "opacity 0.3s";
+        contenantElementsLien.style.visibility = "visible";
+        let interval2 = setInterval(function() {
+            contenantElementsLien.style.opacity = 1;
+            clearInterval(interval2);
+        }, 500)
         return;
     }
+
     const balise = "a"
     let premierCharactere = true;
     let texteFinale = "";
@@ -168,10 +175,22 @@ function ecouteur() {
             imagedroite.style.right = "-15%"
             imageGauche.style.rotate = "0deg"
             imagedroite.style.rotate = "0deg"
-
         });
 
     }
+}
+
+function retour() {
+    
+    contenantElementsLien.style.opacity = 1;
+    contenantElementsLien.style.transition = "opacity 0.3s";
+    contenantElementsLien.style.opacity = "0.5";
+    let interval2 = setInterval(function() {texteQuiJeSuis
+        texteQuiJeSuis.innerHTML = "";
+        contenantElementsLien.style.visibility = "hidden";
+        ecritureTexteMenu(titreJohanVadenne, titreAccueille);
+        clearInterval(interval2);
+    }, 500)
 }
 
 endurscorClignoter(titreJohanVadenne, 4, function() { ecritureTexteMenu(titreJohanVadenne, titreAccueille) });
