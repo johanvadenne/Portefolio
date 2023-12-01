@@ -13,3 +13,5 @@
 - Flash Badge
 
 - mes petits passe temps
+- WINDEV
+    - AdminTypeDevis
