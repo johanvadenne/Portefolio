@@ -16,7 +16,7 @@ function transformormeTitre() {
         texte_cacher_titre_johan_vadenne[indTexte] = lettreMinuscule;
         titre_johan_vadenne.innerHTML = texte_cacher_titre_johan_vadenne.join('');
         x++;
-        if (x > 10) {
+        if (x > 7) {
             clearInterval(interval);
             texte_cacher_titre_johan_vadenne[indTexte] = texte_titre_johan_vadenne.split('')[indTexte]
             titre_johan_vadenne.innerHTML = texte_cacher_titre_johan_vadenne.join('');
