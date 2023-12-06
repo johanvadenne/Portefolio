@@ -95,13 +95,13 @@ header a:nth-child(5) {
     font-family: 'VT323', monospace;
 }
 
-#qui, #veille, #youtube, #bot {
+#qui, #veille, #youtube, #bot, #github_veille {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-#qui div, #veille div, #youtube div, #bot div {
+#qui div, #veille div, #youtube div, #bot div, #github_veille div {
 	margin-top: 1%;
     padding: 2%;
 	width: 70%;
