@@ -21,8 +21,8 @@ jobs:
           SSH_HOST: $ {{ secrets.SSH_HOST }}
           SSH_USER: $ {{ secrets.SSH_USER }}
         run: | 
-          # création dossier ~/.ssh
-          mkdir -p ~/ssh
+          # création dossier /.ssh
+          mkdir -p ~/.ssh
 
           # ajout de la clé dans le fichier id_rsa
           echo "$SSH_KEY" > ~/.ssh/id_rsa
