@@ -95,13 +95,13 @@ header a:nth-child(5) {
     font-family: 'VT323', monospace;
 }
 
-#qui, #veille, #youtube {
+#qui, #veille, #youtube, #bot {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-#qui div, #veille div, #youtube div {
+#qui div, #veille div, #youtube div, #bot div {
 	margin-top: 1%;
     padding: 2%;
 	width: 70%;
@@ -113,20 +113,36 @@ header a:nth-child(5) {
     font-family: 'VT323', monospace;
 }
 
-#qui #presentation p {
+#qui #presentation p, #bot div p {
     font-size: 200%;
 }
 
-.lien_doc, .lien_veille, .lien_yt {
+#bot div p {
+    margin: auto;
+    margin-top: 2%;
+    width: 80%;
+}
+
+.lien_doc, .lien_veille, .lien_yt, .lien_git {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.lien_doc img, .lien_yt img, .lien_veille img{
+.lien_doc img, .lien_yt img, .lien_veille img, .lien_git img{
 	width: 15vh;
 	border-radius: 10px;
 }
 
-#github, .lien_yt img {
+#github, .lien_yt img, .lien_git img {
 	border-radius: 50%;
+}
+
+#source li {
+    font-size: 300%;
+    margin-left: 37%;
+}
+
+a {
+    text-decoration: none;
+    color: #2BD6B4;
 }
