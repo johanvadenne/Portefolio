@@ -27,8 +27,6 @@ jobs:
           # ajout de la clé dans le fichier id_rsa
           echo "$SSH_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          
-          END
 
 # Connexion SSH à la VM
       - name: "Connexion SSH à la VM"
