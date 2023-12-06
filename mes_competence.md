@@ -9,6 +9,8 @@
 - BASH
 - WINDEV
 - JAVA
+- KOTLIN
+- LUA
 - C#
 - C++
 - C
