@@ -9,10 +9,10 @@ indTexte = 0;
 texte_cacher_titre_johan_vadenne = texte_cacher_titre_johan_vadenne.split('')
 
 function transformormeTitre() {
-    x=0;
-    var interval = setInterval(()=>{
+    x = 0;
+    var interval = setInterval(() => {
         var lettreAleatoire = Math.floor(Math.random() * (122 - 97 + 1)) + 97;
-        var lettreMinuscule = String.fromCharCode(lettreAleatoire);;
+        var lettreMinuscule = String.fromCharCode(lettreAleatoire);
         texte_cacher_titre_johan_vadenne[indTexte] = lettreMinuscule;
         titre_johan_vadenne.innerHTML = texte_cacher_titre_johan_vadenne.join('');
         x++;
@@ -21,7 +21,7 @@ function transformormeTitre() {
             texte_cacher_titre_johan_vadenne[indTexte] = texte_titre_johan_vadenne.split('')[indTexte]
             titre_johan_vadenne.innerHTML = texte_cacher_titre_johan_vadenne.join('');
             indTexte++;
-            if (indTexte == texte_titre_johan_vadenne.length) {return;}
+            if (indTexte == texte_titre_johan_vadenne.length) { return; }
             transformormeTitre();
         }
     }, 50)
