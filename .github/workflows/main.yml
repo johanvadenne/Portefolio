@@ -17,9 +17,9 @@ jobs:
       # ajout de la clé privé de l'utilisateur de déploiement
       - name: "création de jeu de clé SSH pour l'utilisateur de déploiement"
         env:
-          SSH_KEY: $ {{ secrets.SSH_KEY }}
-          SSH_HOST: $ {{ secrets.SSH_HOST }}
-          SSH_USER: $ {{ secrets.SSH_USER }}
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
         run: | 
           # création dossier /.ssh
           mkdir -p ~/.ssh
@@ -31,8 +31,8 @@ jobs:
 # Connexion SSH à la VM
       - name: "Connexion SSH à la VM"
         env:
-          SSH_HOST: $ {{ secrets.SSH_HOST }}
-          SSH_USER: $ {{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
         run: | 
           ssh $SSH_USER@$SSH_HOST 'cd /var/www/html/Portofio && git fetch && git pull'
 
