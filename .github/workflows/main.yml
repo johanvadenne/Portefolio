@@ -18,6 +18,7 @@ jobs:
       - name: "création de jeu de clé SSH pour l'utilisateur de déploiement"
         env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_KEY_PUB: ${{ secrets.SSH_KEY_PUB }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
         run: | 
@@ -26,6 +27,7 @@ jobs:
 
           # ajout de la clé dans le fichier id_rsa
           echo "$SSH_KEY" > ~/.ssh/id_rsa
+          echo "$SSH_KEY_PUB" > ~/.ssh/id_rsa.pub
           chmod 600 ~/.ssh/id_rsa
 
 # Connexion SSH à la VM
@@ -34,6 +36,6 @@ jobs:
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
         run: | 
-          ssh -p 19722 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 'cd /var/www/html/Portofio && git fetch && git pull'
+          ssh -p 19722 $SSH_USER@$SSH_HOST 'cd /var/www/html/Portofio && git fetch && git pull'
 
 # Git pull
