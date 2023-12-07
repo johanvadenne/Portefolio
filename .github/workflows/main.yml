@@ -37,7 +37,8 @@ jobs:
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
+          PORT: ${{ secrets.PORT }}
         run: | 
-          ssh -p 19722 $SSH_USER@$SSH_HOST 'cd /var/www/html/Portfolio && git fetch && git pull'
+          ssh -p $PORT $SSH_USER@$SSH_HOST 'cd /var/www/html/Portfolio && git fetch && git pull'
 
 # Git pull
