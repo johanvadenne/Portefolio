@@ -66,8 +66,8 @@ header a:nth-child(5) {
 }
 
 #competence {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #competence .colonne {
@@ -80,8 +80,8 @@ header a:nth-child(5) {
     background-color: #1d2935;
     border: 3px white solid;
     border-radius: 20px;
-	margin: 2%;
-	margin-top: 5%;
+    margin: 2%;
+    margin-top: 5%;
 }
 
 #competence .colonne div ul {
@@ -95,16 +95,26 @@ header a:nth-child(5) {
     font-family: 'VT323', monospace;
 }
 
-#qui, #veille, #youtube, #bot, #github_veille {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+#qui,
+#veille,
+#youtube,
+#bot,
+#github_veille,
+#projet {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#qui div, #veille div, #youtube div, #bot div, #github_veille div {
-	margin-top: 1%;
+#qui div,
+#veille div,
+#youtube div,
+#bot div,
+#github_veille div,
+#projet div {
+    margin-top: 1%;
     padding: 2%;
-	width: 70%;
+    width: 70%;
     color: white;
     background-color: #1d2935;
     border: 3px white solid;
@@ -113,7 +123,8 @@ header a:nth-child(5) {
     font-family: 'VT323', monospace;
 }
 
-#qui #presentation p, #bot div p {
+#qui #presentation p,
+#bot div p {
     font-size: 200%;
 }
 
@@ -123,18 +134,26 @@ header a:nth-child(5) {
     width: 80%;
 }
 
-.lien_doc, .lien_veille, .lien_yt, .lien_git {
-	display: flex;
-	justify-content: space-evenly;
+.lien_doc,
+.lien_veille,
+.lien_yt,
+.lien_git {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.lien_doc img, .lien_yt img, .lien_veille img, .lien_git img{
-	width: 15vh;
-	border-radius: 10px;
+.lien_doc img,
+.lien_yt img,
+.lien_veille img,
+.lien_git img {
+    width: 15vh;
+    border-radius: 10px;
 }
 
-#github, .lien_yt img, .lien_git img {
-	border-radius: 50%;
+#github,
+.lien_yt img,
+.lien_git img {
+    border-radius: 50%;
 }
 
 #source li {
@@ -145,4 +164,24 @@ header a:nth-child(5) {
 a {
     text-decoration: none;
     color: #2BD6B4;
+}
+
+#projet div span {
+    font-size: 300%;
+    color: #2bc2d6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#projet div span a {
+    width: 28%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+#projet div span a:hover {
+    background: #187c68;
 }
