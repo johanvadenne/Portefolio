@@ -15,5 +15,3 @@
 - mes petits passe temps
 - WINDEV
     - AdminTypeDevis
-    
-    
