@@ -17,7 +17,6 @@ h1 {
 
 h2 {
     text-align: center;
-    text-align: center;
     font-size: 500%;
     color: #ecf0f1;
     text-shadow: 2px 2px 4px #000000;
@@ -27,12 +26,24 @@ h2 {
 
 h3 {
     text-align: center;
-    text-align: center;
     font-size: 300%;
     color: #ecf0f1;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Roboto', sans-serif;
     font-family: 'VT323', monospace;
+}
+
+h4 {
+    margin-left: 10%;
+    font-size: 250%;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'VT323', monospace;
+}
+
+.paddingmin {
+    margin-bottom: 0px;
 }
 
 span {
@@ -140,8 +151,8 @@ header a:nth-child(5) {
     font-size: 200%;
 }
 
-#bot div p ,
-.corp div p{
+#bot div p,
+.corp div p {
     margin: auto;
     margin-top: 2%;
     width: 80%;
@@ -163,17 +174,18 @@ header a:nth-child(5) {
     border-radius: 10px;
 }
 
-
 .corp div .image80 {
     width: 80%;
     margin-left: 10%;
     border-radius: 10px;
 }
+
 .corp div .image40 {
     width: 40%;
     margin-left: 30%;
     border-radius: 10px;
 }
+
 .corp div ul {
     font-size: 250%;
     display: flex;
