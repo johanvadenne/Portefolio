@@ -228,3 +228,15 @@ a {
 #projet div span a:hover {
     background: #187c68;
 }
+
+.cadranhover:hover {
+    background: #187c68;
+}
+
+.grossihover {
+    transition: 0.3s;
+}
+
+.grossihover:hover {
+    width: 17vh;
+}
