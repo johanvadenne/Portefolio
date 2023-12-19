@@ -33,7 +33,7 @@ h3 {
     font-family: 'VT323', monospace;
 }
 
-h4 {
+.h4left, .paddingmin {
     margin-left: 10%;
     font-size: 250%;
     color: #ecf0f1;
@@ -161,7 +161,8 @@ header a:nth-child(5) {
 .lien_doc,
 .lien_veille,
 .lien_yt,
-.lien_git {
+.lien_git,
+.imagealigner {
     display: flex;
     justify-content: space-evenly;
 }
@@ -169,7 +170,8 @@ header a:nth-child(5) {
 .lien_doc img,
 .lien_yt img,
 .lien_veille img,
-.lien_git img {
+.lien_git img,
+.imagealigner img {
     width: 15vh;
     border-radius: 10px;
 }
@@ -226,7 +228,7 @@ a {
 }
 
 #projet div span a:hover {
-    background: #187c68;
+    background: #187c685b;
 }
 
 .cadranhover:hover {
@@ -239,4 +241,10 @@ a {
 
 .grossihover:hover {
     width: 17vh;
+}
+
+.h4tirage {
+    font-size: 250%;
+    text-align: center;
+    margin: 1%;
 }
