@@ -1,0 +1,36 @@
+{
+    "Présentation": 
+    [
+        "Bonjour👋, je m'appelle Johan.",
+        "Je suis un véritable passionné d'informatique, que ce soit la programmation, le web, les logiciels, ou encore la cybersécurité...",
+        "Je suis toujours avide de nouvelles connaissances et de découvertes !<br>",
+        "<br>",
+        "J'ai obtenu un BAC PRO SN (Systèmes Numériques) et je suis actuellement en BTS SIO (Services Informatiques aux Organisations)",
+        "avec l'option SLAM (Solutions Logicielles et Applications Métiers). <br>Je travaille constamment sur des projets personnels,",
+        "qu'il s'agisse de créer des logiciels, des jeux vidéo, ou même d'explorer des défis tels que la création de ma propre IA ou mon propre langage informatique.<br>",
+        "<br>",
+        "En résumé, si je devais me décrire en trois mots, je dirais : passionné, ambitieux et persévérant.",
+        "Actuellement, je réalise des recherches pour orienter ma carrière vers la cybersécurité, en mettant l'accent sur la programmation."
+    ],
+    "Document & Lien": 
+    {
+        "element1": 
+        {
+            "image": "assets/image/other/img_cv.png",
+            "lien": "assets/document/CV - VADENNE JOHAN.pdf",
+            "texte": "CV"
+        },
+        "element2": 
+        {
+            "image": "assets/image/other/img_csv.png",
+            "lien": "assets/document/Tableau de synthèse des compétentes.pdf",
+            "texte": "Tableau de synthèse <br>des compétentes"
+        },
+        "element3": 
+        {
+            "image": " assets/image/other/img_github.png",
+            "lien": "https://github.com/johanvadenne",
+            "texte": "Mon GitHub"
+        }
+    }
+}
