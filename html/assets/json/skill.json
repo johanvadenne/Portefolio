@@ -1,0 +1,110 @@
+{
+    "Compétence": {
+        "Langage": [
+            "HTML",
+            "CSS",
+            "JS",
+            "NODE JS",
+            "JSON",
+            "XML",
+            "MARKDOWN",
+            "PYHTON",
+            "RUBY",
+            "BASH",
+            "ELM",
+            "WINDEV",
+            "JAVA",
+            "KOTLIN",
+            "YML",
+            "TWIG",
+            "C#",
+            "C++",
+            "C",
+            "RUST",
+            "SQL"
+        ],
+        "Outils":
+        [
+            "Nginx",
+            "Apache2",
+            "MariaDB",
+            "phpmyadmin",
+            "XAMPP & WAMP",
+            "Symfony",
+            "Visual Studio & Visual Studio Code",
+            "WordPress",
+            "Grafana"
+        ],
+        "Sécurité": [
+            "Clé SSH",
+            "Injection SQL - Requête préparée",
+            "Sauvegarde",
+            "Hachage et chiffrement de données",
+            "Gestion des utilisateurs",
+            "Démarche de conformité au RGPD"
+        ],
+        "Logiciel":
+        [
+            "GitHub",
+            "Visual Studio",
+            "Visual Studio Code",
+            "Androïd Studio",
+            "SSMS",
+            "dbForge",
+            "Unity",
+            "PostMan",
+            "Cisco Packet Tracer",
+            "Wireshark",
+            "Virtual Box",
+            "WSL",
+            "Wondershare EdrawMax",
+            "Miro",
+            "Blender",
+            "Gimp",
+            "WordPress",
+            "GitHub"
+        ],
+        "Autre": [
+            "3D",
+            "Montage vidéo",
+            "Retouche photo"
+        ],
+        "Mise en place et développement":
+        [
+            "API",
+            "base de donnée",
+            "Serveur Windows",
+            "Switch",
+            "Commutateur",
+            "Borne WIFI",
+            "Installation de poste",
+            "Déploiment GitHub"
+        ],
+        "Qualité":
+        [
+            "Passionné",
+            "Travail d'équipe",
+            "Autonome",
+            "Adaptation",
+            "Curieux",
+            "Organisé"
+        ],
+        "OS":
+        [
+            "Windows",
+            "Linux",
+            "Androïd"
+        ],
+        "Navigateur":
+        [
+            "Chrome",
+            "FireFox",
+            "WaterFox",
+            "Opera",
+            "SideKick",
+            "Brave",
+            "Edge"
+        ]
+
+    }
+}

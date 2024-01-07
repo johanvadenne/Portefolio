@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2? family= Archivo & display=swap');
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'Archivo', sans-serif;
+    background: #618cb6;
 }
 
 h1 {
@@ -39,8 +38,23 @@ h1 {
     align-items: center;
     flex-direction: column;
     width: 60%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    border-radius: 14px;
+    border: black 3px solid;
+}
+
+.section_style2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+    padding-left: 7%;
+    padding-right: 7%;
     padding-top: 1%;
     padding-bottom: 1%;
     margin-top: 0.5%;
@@ -50,7 +64,7 @@ h1 {
 }
 
 .section_titre {
-    height: 15vh;
+    height: 10vh;
     border: none;
 }
 
@@ -76,4 +90,62 @@ h1 {
 
 .text_top {
     margin-top:5%;
+}
+
+.lien_style1 {
+    color: black;
+    text-decoration: none;
+    font-size: 200%;
+}
+
+.lien_style2 {
+    color: black;
+    text-decoration: none;
+    font-size: 200%;
+    width: 30%;
+}
+
+#section_presentation_lien {
+    border: none;
+}
+
+.container_lien {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.section_competence {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.colonne_competence {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.div_competence {
+    border-radius: 14px;
+    border: black 3px solid;
+    width: 100%;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    padding: 2%;
+}
+
+.li_competence {
+    margin-left: 30%;
+    font-size: 150%;
+}
+
+.lien_projet {
+    width: 30%;
+    margin: 1%;
+    color: black;
+    text-decoration: none;
 }

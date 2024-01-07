@@ -1,0 +1,26 @@
+{
+    "Mes applications & outils": 
+    {
+        "youtube": 
+        {
+            "image": "assets/image/social networks/img_youtube.png",
+            "onclick": "youtube()",
+            "texte": "Youtube",
+            "class": "img_style1"
+        },
+        "github": 
+        {
+            "image": " assets/image/social networks/img_github.png",
+            "onclick": "github()",
+            "texte": "GitHub",
+            "class": "img_style1 img_rond"
+        },
+        "bot": 
+        {
+            "image": " assets/image/other/img_bot.png",
+            "onclick": "",
+            "texte": "Mon BOT",
+            "class": "img_style1"
+        }
+    }
+}

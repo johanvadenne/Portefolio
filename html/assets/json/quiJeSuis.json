@@ -14,23 +14,26 @@
     ],
     "Document & Lien": 
     {
-        "element1": 
+        "cv": 
         {
             "image": "assets/image/other/img_cv.png",
             "lien": "assets/document/CV - VADENNE JOHAN.pdf",
-            "texte": "CV"
+            "texte": "CV",
+            "class": "img_style1"
         },
-        "element2": 
+        "competenceSynthese": 
         {
             "image": "assets/image/other/img_csv.png",
-            "lien": "assets/document/Tableau de synthèse des compétentes.pdf",
-            "texte": "Tableau de synthèse <br>des compétentes"
+            "lien": "assets/document/04 - Tableau de synthèse - Epreuve E4.xlsx",
+            "texte": "synthèse compétences",
+            "class": "img_style1"
         },
-        "element3": 
+        "github": 
         {
-            "image": " assets/image/other/img_github.png",
+            "image": " assets/image/social networks/img_github.png",
             "lien": "https://github.com/johanvadenne",
-            "texte": "Mon GitHub"
+            "texte": "Mon GitHub",
+            "class": "img_style1 img_rond"
         }
     }
 }
