@@ -1,0 +1,11 @@
+{
+    "compétence": 
+    [
+        {"Gérer le patrimoine informatique": 1},
+        {"Répondre aux incidents et aux demandes d’assistance et d’évolution": 2},
+        {"Développer la présence en ligne de l’organisation": 3},
+        {"Travailler en mode projet": 4},
+        {"Mettre à disposition des utilisateurs un service informatique": 5},
+        {"Organiser son développement professionnel": 6}
+    ]
+}
