@@ -22,9 +22,10 @@ class CL_HTML {
         return newElement;
     }
     
-    createImgTagElement(src, parentElement, id = "", className = "") {
+    createImgTagElement(src, parentElement, id = "", className = "", alt = "") {
         let newImg = document.createElement("img");
         newImg.src = src;
+        newImg.alt = alt;
         newImg.id = id;
         newImg.className = className;
         parentElement.appendChild(newImg);

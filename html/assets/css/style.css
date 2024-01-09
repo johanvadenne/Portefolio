@@ -68,12 +68,16 @@ h1 {
     border: none;
 }
 
-.texte_presentation {
+.texte_style1 {
     font-size: 150%;
 }
 
 .titre_presentation_h2 {
     font-size: 300%;
+}
+
+.titre_presentation_h3 {
+    font-size: 200%;
 }
 
 .texte_centrer {
@@ -84,8 +88,16 @@ h1 {
     width: 40%;
 }
 
+.img_style2 {
+    width: 80%;
+}
+
 .img_rond {
     border-radius: 50%;
+}
+
+.img_arrondi {
+    border-radius: 14px;
 }
 
 .text_top {

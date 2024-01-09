@@ -45,7 +45,7 @@ function quiJeSuis() {
             sectionDocumentLien = HTML.createTagElement("section", indexSectionPere, "", "", "section_style1");
 
             HTML.createTagElement("h2", sectionPresentation, "Présentation", "", "texte_centrer titre_presentation_h2");
-            HTML.createTagElement("p", sectionPresentation, presentation, "", "texte_presentation");
+            HTML.createTagElement("p", sectionPresentation, presentation, "", "texte_style1");
 
             HTML.createTagElement("h2", sectionDocumentLien, "Document & Lien", "", "texte_centrer titre_presentation_h2");
 
@@ -140,7 +140,7 @@ function mesProjets() {
 
             for (const nomProjet in project) {
                 if (project.hasOwnProperty(nomProjet)) {
-                    aProjet = HTML.createLinkTagElement("#", sectionCompetence, "", "", "", "lien_projet");
+                    aProjet = HTML.createLinkTagElement("#", sectionCompetence, "", "", "", "lien_projet", project[nomProjet].onclick);
                     HTML.createTagElement("h2", aProjet, nomProjet, "", "texte_centrer");
                 }
             }
