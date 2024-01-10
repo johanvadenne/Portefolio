@@ -13,22 +13,22 @@ const indexHeaderLien = document.getElementById("index_container_lien");
 
 function headerLink() {
     HTML.appelleAPI(urlheaderLinkJson)
-    .then(response => {
-        let link = response["lien"];
+        .then(response => {
+            let link = response["lien"];
 
-        for (const cle in link) {
-            if (link.hasOwnProperty(cle)) {
-                HTML.enregistreElement = false;
-                aElement = HTML.createLinkTagElement(link[cle].href, indexHeaderLien, cle, "", "", "lien_style1", link[cle].onclick);
-                HTML.enregistreElement = true;
+            for (const cle in link) {
+                if (link.hasOwnProperty(cle)) {
+                    HTML.enregistreElement = false;
+                    aElement = HTML.createLinkTagElement(link[cle].href, indexHeaderLien, cle, "", "", "lien_style1", link[cle].onclick);
+                    HTML.enregistreElement = true;
+                }
             }
-        }
-    })
+        })
 }
 
 function quiJeSuis() {
-    
-    HTML.clearElement();
+
+    HTML.clearElement(arguments.callee.name+"()");
 
     // display data
     HTML.appelleAPI(urlquiJeSuisJson)
@@ -55,7 +55,7 @@ function quiJeSuis() {
                 if (DocumentLien.hasOwnProperty(cle)) {
                     aElement = HTML.createLinkTagElement("#", divContainer, "", "blank", "", "colonne lien_style1");
                     HTML.createImgTagElement(DocumentLien[cle].image, aElement, "", DocumentLien[cle].class);
-                    HTML.createTagElement("h3", aElement, DocumentLien[cle].texte, "", "texte_centrer text_margin_top5");  
+                    HTML.createTagElement("h3", aElement, DocumentLien[cle].texte, "", "texte_centrer text_margin_top5");
                 }
             }
         })
@@ -63,32 +63,32 @@ function quiJeSuis() {
 
 function maVeille() {
 
-    HTML.clearElement();
+    HTML.clearElement(arguments.callee.name+"()");
 
     HTML.appelleAPI(urlmaVeilleJson)
-    .then(response => {
-        // recovers data
-        let data = response;
-        let applicationsOutils = data["Mes applications & outils"];
-        
-        sectionApplicationsOutils = HTML.createTagElement("section", indexSectionPere, "", "", "section_style1");
-        HTML.createTagElement("h2", sectionApplicationsOutils, "Mes applications & outils", "", "texte_centrer titre_presentation_h2");
-        divContainer = HTML.createTagElement("div", sectionApplicationsOutils, "", "", "centrer");
+        .then(response => {
+            // recovers data
+            let data = response;
+            let applicationsOutils = data["Mes applications & outils"];
 
-        for (const cle in applicationsOutils) {
-            if (applicationsOutils.hasOwnProperty(cle)) {
-                aElement = HTML.createLinkTagElement("#", divContainer, "", "", "", "colonne lien_style1", applicationsOutils[cle].onclick);
-                HTML.createImgTagElement(applicationsOutils[cle].image, aElement, "", applicationsOutils[cle].class);
-                HTML.createTagElement("h3", aElement, applicationsOutils[cle].texte, "", "texte_centrer text_margin_top5");
+            sectionApplicationsOutils = HTML.createTagElement("section", indexSectionPere, "", "", "section_style1");
+            HTML.createTagElement("h2", sectionApplicationsOutils, "Mes applications & outils", "", "texte_centrer titre_presentation_h2");
+            divContainer = HTML.createTagElement("div", sectionApplicationsOutils, "", "", "centrer");
+
+            for (const cle in applicationsOutils) {
+                if (applicationsOutils.hasOwnProperty(cle)) {
+                    aElement = HTML.createLinkTagElement("#", divContainer, "", "", "", "colonne lien_style1", applicationsOutils[cle].onclick);
+                    HTML.createImgTagElement(applicationsOutils[cle].image, aElement, "", applicationsOutils[cle].class);
+                    HTML.createTagElement("h3", aElement, applicationsOutils[cle].texte, "", "texte_centrer text_margin_top5");
+                }
             }
-        }
 
-    })
+        })
 }
 
 function competence() {
-    
-    HTML.clearElement();
+
+    HTML.clearElement(arguments.callee.name+"()");
 
     HTML.appelleAPI(urlSkillJson)
         .then(response => {
@@ -128,8 +128,8 @@ function competence() {
 }
 
 function mesProjets() {
-    
-    HTML.clearElement();
+
+    HTML.clearElement(arguments.callee.name+"()");
 
     HTML.appelleAPI(urlProjectJson)
         .then(response => {
@@ -148,8 +148,8 @@ function mesProjets() {
 }
 
 function youtube() {
-    
-    HTML.clearElement();
+
+    HTML.clearElement(arguments.callee.name+"()");
 
     HTML.appelleAPI(urlYoutubeJson)
         .then(response => {
@@ -168,8 +168,8 @@ function youtube() {
 }
 
 function github() {
-    
-    HTML.clearElement();
+
+    HTML.clearElement(arguments.callee.name+"()");
 
     HTML.appelleAPI(urlGitHubJson)
         .then(response => {
@@ -187,5 +187,20 @@ function github() {
         })
 }
 
+
 headerLink();
-quiJeSuis();
+
+try {
+    const page = JSON.parse(localStorage.getItem("page"));
+    HTML.journal(page)
+    HTML.journal(page["fonction"])
+    if (page != null) {
+        eval(page.fonction)
+    } else {
+        error("test");
+    }
+} catch (error) {
+    HTML.journal(error)
+    window.localStorage.setItem("page", null);
+    quiJeSuis();
+}

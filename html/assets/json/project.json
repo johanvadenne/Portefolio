@@ -1,6 +1,16 @@
 {
     "Projet": {
 
+        "les frelots": {
+            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/lesFrelots.json\")",
+            "syntheseCometence": [
+                "Gérer le patrimoine informatique",
+                "Répondre aux incidents et aux demandes d’assistance et d’évolution",
+                "Développer la présence en ligne de l’organisation",
+                "Travailler en mode projet",
+                "Mettre à disposition des utilisateurs un service informatique"
+        ]
+        },
         "BugSafari": {
             "syntheseCometence": [
                 "Gérer le patrimoine informatique",
@@ -28,16 +38,6 @@
         },
         "blender": {
             "onclick": ""
-        },
-        "les frelots": {
-            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/lesFrelots.json\")",
-            "syntheseCometence": [
-                "Gérer le patrimoine informatique",
-                "Répondre aux incidents et aux demandes d’assistance et d’évolution",
-                "Développer la présence en ligne de l’organisation",
-                "Travailler en mode projet",
-                "Mettre à disposition des utilisateurs un service informatique"
-        ]
         },
         "tirage randome": {
             "onclick": ""

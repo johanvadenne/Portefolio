@@ -59,10 +59,15 @@ class CL_HTML {
             });
     }
 
-    clearElement() {
+    clearElement(functionName) {
         this.tabElement.forEach(element => {
             element.remove();
         });
+        this.savePage(functionName);
+    }
+
+    savePage(functionName) {
+        window.localStorage.setItem("page", JSON.stringify(JSON.parse("{\"fonction\":\""+functionName+"\"}")));
     }
 
 }

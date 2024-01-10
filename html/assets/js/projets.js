@@ -1,6 +1,6 @@
 function afficheProjet(url) {
 
-    HTML.clearElement();
+    HTML.clearElement(arguments.callee.name+"('"+url+"')");
 
     HTML.appelleAPI(url)
         .then(response => {
