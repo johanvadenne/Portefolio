@@ -1,52 +1,160 @@
 {
-    "Les Frelots": 
-    {
+    "Les Frelots": {
         "Logo": {
+            "tag": "img",
             "src": "assets/image/les frelots/logo.png",
             "alt": "logo les frelots",
             "class": "img_style1"
         },
-        "Description": "Club biker fondé en 2017 dont les membres roulent en Harley Davidson. Le club ne revendique aucun territoire géographique, ne revendique pas d'opinions politiques ou religieuses. Notre façon de vivre, l'organisation de nos évènements, la liberté de rouler ensemble, alimente la passion commune pour notre CLUB.",
-        "Demande": "Créer un site vitrine pour présenter l'association les frelots et ses activités.",
-        "Wireframing": "",
-        "img_ireframing": {
+        "aLienLesFrelots": {
+            "tag": "a",
+            "href": "https://www.lesfrelots.fr/",
+            "texte": "lesfrelots.fr",
+            "target": "blank",
+            "class": "lien_style1"
+        },
+        "h3Description": {
+            "tag": "h3",
+            "texte": "Description",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pDescription": {
+            "tag": "p",
+            "texte": "Club biker fondé en 2017 dont les membres roulent en Harley Davidson. Le club ne revendique aucun territoire géographique, ne revendique pas d'opinions politiques ou religieuses. Notre façon de vivre, l'organisation de nos évènements, la liberté de rouler ensemble, alimente la passion commune pour notre CLUB.",
+            "class": "texte_centrer texte_style1"
+        },
+        "h3Demande": {
+            "tag": "h3",
+            "texte": "Demande",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pDemande": {
+            "tag": "p",
+            "texte": "Créer un site vitrine pour présenter l'association les frelots et ses activités.",
+            "class": "texte_centrer texte_style1"
+        },
+        "h3Wireframing": {
+            "tag": "h3",
+            "texte": "Wireframing",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "imgWireframing": {
+            "tag": "img",
             "src": "assets/image/les frelots/wireframe les frelots.jpg",
             "alt": "wireframing les frelots",
             "class": "img_style2 img_arrondi"
         },
-        "Langage": {
-            "HTML": {
-                "src": "assets/image/langage/html.png",
-                "alt": "logo HTML",
-                "class": "img_style1"
+        "h3Administrateur": {
+            "tag": "h3",
+            "texte": "Administrateur",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pAdministrateur": {
+            "tag": "p",
+            "texte": "L'administrateur a la possibilité de se connecter pour accéder à un formulaire qui lui permettra d'ajouter des flyers. Aujourd'hui l'administrateur est le président.",
+            "class": "texte_centrer texte_style1"
+        },
+        "divAdmin": {
+            "tag": "div",
+            "class": "div_style1",
+            "divConnexion": {
+                "tag": "div",
+                "class": "colonne2",
+                "img_connexion": {
+                    "tag": "img",
+                    "src": "assets/image/les frelots/img_connexion.png",
+                    "alt": "logo Hostinger",
+                    "class": "img_style4 img_arrondi"
+                },
+                "p_connexion": {
+                    "tag": "h3",
+                    "texte": "page de connexion",
+                    "class": "texte_centrer titre_presentation_h3"
+                }
             },
-            "CSS": {
-                "src": "assets/image/langage/css.png",
-                "alt": "logo CSS",
-                "class": "img_style1"
-            },
-            "JS": {
-                "src": "assets/image/langage/js.png",
-                "alt": "logo JS",
-                "class": "img_style1"
-            },
-            "PHP": {
-                "src": "assets/image/langage/php.png",
-                "alt": "logo PHP",
-                "class": "img_style1"
+            "div_formulaire_ajout_flyer": {
+                "tag": "div",
+                "class": "colonne2",
+                "img_formulaire_ajout_flyer": {
+                    "tag": "img",
+                    "src": "assets/image/les frelots/img_formulaire_ajout_flyer.png",
+                    "alt": "logo Hostinger",
+                    "class": "img_style4 img_arrondi"
+                },
+                "h3_formulaire_ajout_flyer": {
+                    "tag": "h3",
+                    "texte": "Formulaire d'ajout de flyer",
+                    "class": "texte_centrer titre_presentation_h3"
+                }
             }
         },
-        "Hebergeur": {
-            "Hostinger": {
+        "h3Donnee": {
+            "tag": "h3",
+            "texte": "Données",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pDonnee": {
+            "tag": "p",
+            "texte": "Les données que je traite principalement sont les flyers. Je les affiche dans l'ordre croissant en fonction de leurs dates de leur évènement. Pour cela le formulaire présenté ci-dessus permet de nommer les images en date, puis enregistrer dans un dossier dédié. Lorsque je veux les afficher les flyers un programme PHP trie dans l'ordre croissant les flyers. Pour ce qui est de reste je m'en charge manuellement.",
+            "class": "texte_centrer texte_style1"
+        },
+        "h3Langage": {
+            "tag": "h3",
+            "texte": "Langage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "Langage": {
+            "tag": "div",
+            "class": "div_style1",
+            "HTML": {
+                "tag": "img",
+                "src": "assets/image/langage/html.png",
+                "alt": "logo HTML",
+                "class": "img_style3"
+            },
+            "CSS": {
+                "tag": "img",
+                "src": "assets/image/langage/css.png",
+                "alt": "logo CSS",
+                "class": "img_style3"
+            },
+            "JS": {
+                "tag": "img",
+                "src": "assets/image/langage/js.webp",
+                "alt": "logo JS",
+                "class": "img_style3"
+            },
+            "PHP": {
+                "tag": "img",
+                "src": "assets/image/langage/php.png",
+                "alt": "logo PHP",
+                "class": "img_style3"
+            }
+        },
+        "h3Hebergeur": {
+            "tag": "h3",
+            "texte": "Hebergeur",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "Hostinger": {
+            "tag": "div",
+            "class": "div_style1",
+            "imgHostinger": {
+                "tag": "img",
                 "src": "assets/image/site/hostinger.png",
                 "alt": "logo Hostinger",
-                "class": "img_style1"
-            },
-            "Shéma réseaux": {
-                "src": "assets/image/les frelots/Schéma les frelots.jpg",
-                "alt": "Schéma réseaux les frelots",
-                "class": "img_style1"
+                "class": "img_style3 img_arrondi"
             }
+        },
+        "h3Information": {
+            "tag": "h3",
+            "texte": "Information",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pInformation": {
+            "tag": "p",
+            "texte": "Ce site internet est le tout premier que j'ai développé. Je l'ai développé en Second lorsque j'avais 15 ans, puis je les remodelais en gardant la même architecture 2 ans après pour pouvoir le mettre en ligne. Je suis conscient que ce site internet n'est pas très bien optimisée, mais étant un site sur lequel j'ai pleinement les droits de développement dessus, je l'optimise un peu chaque fois que j'en ai le temps. Merci de votre compréhension.",
+            "class": "texte_centrer texte_style1"
         }
     }
 }

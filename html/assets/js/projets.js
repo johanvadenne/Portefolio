@@ -1,5 +1,3 @@
-let sectionProjet;
-
 function afficheProjet(url) {
 
     HTML.clearElement();
@@ -13,26 +11,28 @@ function afficheProjet(url) {
             for (const nomProjet in projet) {
                 if (projet.hasOwnProperty(nomProjet)) {
                     HTML.createTagElement("h2", sectionProjet, nomProjet, "", "texte_centrer titre_presentation_h2")
-                    parcourElementProjet(projet[nomProjet], true);
+                    parcourElementProjet(projet[nomProjet], sectionProjet);
                 }
             }
         })
 }
 
-function parcourElementProjet(elementProjet, premierPassage) {
+function parcourElementProjet(elementProjet, elementPere) {
 
     for (const element in elementProjet) {
-        if (elementProjet.hasOwnProperty(element)) {
-
-            if (elementProjet[element].src != undefined) {
-                HTML.createImgTagElement(elementProjet[element].src, sectionProjet, "", elementProjet[element].class, elementProjet[element].alt)
+        if (elementProjet.hasOwnProperty(element) && elementProjet[element].hasOwnProperty("tag")) {
+            if (elementProjet[element].tag == "img") {
+                HTML.createImgTagElement(elementProjet[element].src, elementPere, "", elementProjet[element].class, elementProjet[element].alt)
             }
-            else if (typeof elementProjet[element] === "string") {
-                HTML.createTagElement("h3", sectionProjet, element, "", "texte_centrer titre_presentation_h3")
-                HTML.createTagElement("p", sectionProjet, elementProjet[element], "", "texte_centrer texte_style1")
+            else if (elementProjet[element].tag == "a") {
+                HTML.createLinkTagElement(elementProjet[element].href, elementPere, elementProjet[element].texte, elementProjet[element].target, "", elementProjet[element].class)
             }
-            else if (premierPassage) {
-                parcourElementProjet(elementProjet[element], false)
+            else if (elementProjet[element].hasOwnProperty("texte")) {
+                HTML.createTagElement(elementProjet[element].tag, elementPere, elementProjet[element].texte, "", elementProjet[element].class);
+            }
+            else {
+                newElementPere = HTML.createTagElement(elementProjet[element].tag, elementPere, "", "", elementProjet[element].class);
+                parcourElementProjet(elementProjet[element], newElementPere)
             }
         }
 

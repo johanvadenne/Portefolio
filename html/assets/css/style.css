@@ -9,6 +9,10 @@ h1 {
     font-size: 400%;
 }
 
+#section_presentation_lien {
+    border: none;
+}
+
 .largeur_grand {
     width: 60%;
 }
@@ -30,6 +34,14 @@ h1 {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
+}
+
+.colonne2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 49%;
 }
 
 .section_style1 {
@@ -92,6 +104,16 @@ h1 {
     width: 80%;
 }
 
+.img_style3 {
+    height: 15vh;
+    width: auto;
+}
+
+.img_style4 {
+    height: 20vh;
+    width: auto;
+}
+
 .img_rond {
     border-radius: 50%;
 }
@@ -115,10 +137,6 @@ h1 {
     text-decoration: none;
     font-size: 200%;
     width: 30%;
-}
-
-#section_presentation_lien {
-    border: none;
 }
 
 .container_lien {
@@ -148,6 +166,13 @@ h1 {
     margin-top: 1.5%;
     margin-bottom: 1%;
     padding: 2%;
+}
+
+.div_style1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .li_competence {
