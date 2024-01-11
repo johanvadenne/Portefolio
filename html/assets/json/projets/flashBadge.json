@@ -1,0 +1,163 @@
+{
+    "Flash⚡Badge": {
+        "Logo": {
+            "tag": "img",
+            "src": "assets/image/projets/Flash⚡Badge/horo.png",
+            "alt": "logo Flash⚡Badge",
+            "class": "img_style3 img_arrondi"
+        },
+        "h3LogicielDeDéveloppement": {
+            "tag": "h3",
+            "texte": "Logiciel de développement",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "imgLogoVS": {
+            "tag": "img",
+            "src": "assets/image/projets/Flash⚡Badge/img_VS.png",
+            "alt": "logo VS",
+            "class": "img_style3 img_arrondi"
+        },
+        "h3Description": {
+            "tag": "h3",
+            "texte": "Description",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pDescription": {
+            "tag": "p",
+            "texte": "Flash⚡Badge est un outil qui permet de badger, aujourd'hui (11/01/2024) uniquement compatible avec le site web Etemptation dans le réseaux du Sydev. Etemptation est une application qui permet de suivre les horaires des salariés au Sydev.",
+            "class": "texte_centrer texte_style1"
+        },
+        "h3Demande": {
+            "tag": "h3",
+            "texte": "Demande",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pDemande": {
+            "tag": "p",
+            "texte": "Moi-même était à la recherche d'un moyen de badger le plus rapidement possible, car les moyens du Sydev étaient de badger directement à une badgeuse, soit sur son poste en allant sur le site ETemptation et badger en naviguant à travers divers onglets. Ayant la maladie du développeur, j'ai décidé de rechercher et développer un logiciel qui badge en 1 CLICK!",
+            "class": "texte_centrer texte_style1"
+        },
+        "h3Application": {
+            "tag": "h3",
+            "texte": "Application",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "h3AppParametrage": {
+            "tag": "h3",
+            "texte": "Paramétrage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "imgAppParametrage": {
+            "tag": "img",
+            "src": "assets/image/projets/Flash⚡Badge/img_fenetreParametrage.png",
+            "alt": "fenêtre de paramétrage",
+            "class": "img_style2 img_arrondi"
+        },
+        "pAppParametrage1": {
+            "tag": "p",
+            "texte": "Au premier lancement l'utilisateur doit rentrer les paramètres. Ces identifiants qui seront chiffrés dans le dossier de l'utilisateur, ainsi qu'avoir la possibilité de badger directement ou avoir un message de confirmation t'elle que celui-là:",
+            "class": "texte_centrer texte_style1"
+        },
+        "imgFenetreConfirmationBadge": {
+            "tag": "img",
+            "src": "assets/image/projets/Flash⚡Badge/img_fenetreConfirmationBadge.png",
+            "alt": "fenetre de confirmation de badge",
+            "class": "img_style3 img_arrondi"
+        },
+        "pAppParametrage2": {
+            "tag": "p",
+            "texte": "Une fois que l'utilisateur confirme ces paramètres, un message viendra informer si les identifiant sont corrects.",
+            "class": "texte_centrer texte_style1"
+        },
+        "divAdmin": {
+            "tag": "div",
+            "class": "div_style1",
+            "imgFenetreIdentifiantCorrect": {
+                "tag": "img",
+                "src": "assets/image/projets/Flash⚡Badge/img_fenetreIdentifiantCorrect.png",
+                "alt": "fenêtre identifiant correct",
+                "class": "img_style3 img_arrondi"
+            },
+            "imgFenetreErreurIdendifiant": {
+                "tag": "img",
+                "src": "assets/image/projets/Flash⚡Badge/img_fenetreErreurIdendifiant.png",
+                "alt": "fenêtre identifiant mauvais",
+                "class": "img_style3 img_arrondi"
+            }
+        },
+        "h3Badgeage": {
+            "tag": "h3",
+            "texte": "Badgeage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pBadgeage1": {
+            "tag": "p",
+            "texte": "Voici la fenêtre lorsque l'on badge:",
+            "class": "texte_centrer texte_style1"
+        },
+        "imgBadgeage1": {
+            "tag": "img",
+            "src": "assets/image/projets/Flash⚡Badge/img_fenetreBadge.png",
+            "alt": "fenêtre identifiant mauvais",
+            "class": "img_style2 img_arrondi"
+        },
+        "pBadgeage2": {
+            "tag": "p",
+            "texte": "Flash⚡Badge ne badgera pas entre ces horaires \"9h00 - 11h30\" et \"14h00 - 16h30\". Si vous tentez un badgeage, la fenêtre vous arrêtera.",
+            "class": "texte_centrer texte_style1"
+        },
+        "imgBadgeage2": {
+            "tag": "img",
+            "src": "assets/image/projets/Flash⚡Badge/img_fenetreStopBadge.png",
+            "alt": "fenêtre identifiant mauvais",
+            "class": "img_style2 img_arrondi"
+        },
+        "h3Langage": {
+            "tag": "h3",
+            "texte": "Langage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "Langage": {
+            "tag": "div",
+            "class": "div_style1",
+            "C#": {
+                "tag": "img",
+                "src": "assets/image/langage/CSharp.png",
+                "alt": "logo CSharp",
+                "class": "img_style3"
+            },
+            "JSON": {
+                "tag": "img",
+                "src": "assets/image/langage/json.png",
+                "alt": "logo JSON",
+                "class": "img_style3"
+            }
+        },
+        "h3Algrithme": {
+            "tag": "h3",
+            "texte": "UML Diagramme de séquence",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pAlgrithme": {
+            "tag": "p",
+            "texte": "Voici un cas où un utilisateur badge.",
+            "class": "texte_centrer texte_style1"
+        },
+        "imgAlgrithme": {
+            "tag": "img",
+            "src": "assets/image/projets/Flash⚡Badge/UML Flash⚡Badge badge.jpg",
+            "alt": "logo JSON",
+            "class": "img_style2 img_arrondi"
+        },
+        "h3Information": {
+            "tag": "h3",
+            "texte": "Information",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pInformation": {
+            "tag": "p",
+            "texte": "Ce logiciel n'a pas été développer en collaboration avec ETemptation.",
+            "class": "texte_centrer texte_style1"
+        }
+    }
+}

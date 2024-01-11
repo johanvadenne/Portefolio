@@ -2,7 +2,7 @@
     "Les Frelots": {
         "Logo": {
             "tag": "img",
-            "src": "assets/image/les frelots/logo.png",
+            "src": "assets/image/projets/les frelots/logo.png",
             "alt": "logo les frelots",
             "class": "img_style1"
         },
@@ -40,7 +40,7 @@
         },
         "imgWireframing": {
             "tag": "img",
-            "src": "assets/image/les frelots/wireframe les frelots.jpg",
+            "src": "assets/image/projets/les frelots/wireframe les frelots.jpg",
             "alt": "wireframing les frelots",
             "class": "img_style2 img_arrondi"
         },
@@ -62,7 +62,7 @@
                 "class": "colonne2",
                 "img_connexion": {
                     "tag": "img",
-                    "src": "assets/image/les frelots/img_connexion.png",
+                    "src": "assets/image/projets/les frelots/img_connexion.png",
                     "alt": "logo Hostinger",
                     "class": "img_style4 img_arrondi"
                 },
@@ -77,7 +77,7 @@
                 "class": "colonne2",
                 "img_formulaire_ajout_flyer": {
                     "tag": "img",
-                    "src": "assets/image/les frelots/img_formulaire_ajout_flyer.png",
+                    "src": "assets/image/projets/les frelots/img_formulaire_ajout_flyer.png",
                     "alt": "logo Hostinger",
                     "class": "img_style4 img_arrondi"
                 },
