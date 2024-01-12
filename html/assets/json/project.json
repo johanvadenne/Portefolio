@@ -14,12 +14,13 @@
         "Flash⚡Badge": {
             "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/flashBadge.json\")",
             "syntheseCometence": [
-                "Gérer le patrimoine informatique",
-                "Répondre aux incidents et aux demandes d’assistance et d’évolution",
                 "Développer la présence en ligne de l’organisation",
                 "Travailler en mode projet",
                 "Mettre à disposition des utilisateurs un service informatique"
         ]
+        },
+        "pokedex viewer": {
+            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/pokedexViewer.json\")"
         },
         "BugSafari": {
             "syntheseCometence": [
@@ -38,9 +39,6 @@
             "onclick": ""
         },
         "blague joke API": {
-            "onclick": ""
-        },
-        "pokedex viewer": {
             "onclick": ""
         },
         "Super Simon": {

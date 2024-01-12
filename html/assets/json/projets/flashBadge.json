@@ -6,17 +6,6 @@
             "alt": "logo Flash⚡Badge",
             "class": "img_style3 img_arrondi"
         },
-        "h3LogicielDeDéveloppement": {
-            "tag": "h3",
-            "texte": "Logiciel de développement",
-            "class": "texte_centrer titre_presentation_h3"
-        },
-        "imgLogoVS": {
-            "tag": "img",
-            "src": "assets/image/projets/Flash⚡Badge/img_VS.png",
-            "alt": "logo VS",
-            "class": "img_style3 img_arrondi"
-        },
         "h3Description": {
             "tag": "h3",
             "texte": "Description",
@@ -36,6 +25,17 @@
             "tag": "p",
             "texte": "Moi-même était à la recherche d'un moyen de badger le plus rapidement possible, car les moyens du Sydev étaient de badger directement à une badgeuse, soit sur son poste en allant sur le site ETemptation et badger en naviguant à travers divers onglets. Ayant la maladie du développeur, j'ai décidé de rechercher et développer un logiciel qui badge en 1 CLICK!",
             "class": "texte_centrer texte_style1"
+        },
+        "h3LogicielDeDéveloppement": {
+            "tag": "h3",
+            "texte": "Logiciel de développement",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "imgLogoVS": {
+            "tag": "img",
+            "src": "assets/image/projets/Flash⚡Badge/img_VS.png",
+            "alt": "logo VS",
+            "class": "img_style3 img_arrondi"
         },
         "h3Application": {
             "tag": "h3",
