@@ -25,7 +25,10 @@ function parcourElementProjet(elementProjet, elementPere) {
                 HTML.createImgTagElement(elementProjet[element].src, elementPere, "", elementProjet[element].class, elementProjet[element].alt)
             }
             else if (elementProjet[element].tag == "a") {
-                HTML.createLinkTagElement(elementProjet[element].href, elementPere, elementProjet[element].texte, elementProjet[element].target, "", elementProjet[element].class)
+                newElementPere = HTML.createLinkTagElement(elementProjet[element].href, elementPere, elementProjet[element].texte, elementProjet[element].target, "", elementProjet[element].class)
+                if (elementProjet[element].hasOwnProperty("element")) {
+                    parcourElementProjet(elementProjet[element].element, newElementPere)
+                }
             }
             else if (elementProjet[element].hasOwnProperty("texte")) {
                 HTML.createTagElement(elementProjet[element].tag, elementPere, elementProjet[element].texte, "", elementProjet[element].class);
