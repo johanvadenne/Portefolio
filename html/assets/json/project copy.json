@@ -36,15 +36,53 @@
         ]
         },
         "Pikmin Parking Map": {
-            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/pikminParkingMap.json\")",
+            "onclick": ""
+        },
+        "BugSafari": {
             "syntheseCometence": [
+                "Gérer le patrimoine informatique",
+                "Répondre aux incidents et aux demandes d’assistance et d’évolution",
                 "Développer la présence en ligne de l’organisation",
                 "Travailler en mode projet",
-                "Mettre à disposition des utilisateurs un service informatique"
+                "Mettre à disposition des utilisateurs un service informatique",
+                "Organiser son développement professionnel"
         ]
         },
-        "BOT veille ": {
-            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/bot.json\")"
+        "BOT veille informatique ": {
+            "onclick": ""
+        },
+        "API": {
+            "onclick": ""
+        },
+        "blague joke API": {
+            "onclick": ""
+        },
+        "Super Simon": {
+            "onclick": ""
+        },
+        "blender": {
+            "onclick": ""
+        },
+        "tirage randome": {
+            "onclick": ""
+        },
+        "où est la station spatiale internationale ISS": {
+            "onclick": ""
+        },
+        "mes petits passe temps": {
+            "onclick": ""
+        },
+        "WINDEV": {
+            "onclick": ""
+        },
+        "AdminTypeDevis": {
+            "onclick": ""
+        },
+        "Déploiement": {
+            "onclick": ""
+        },
+        "Portfolio": {
+
         }
     }
 }

@@ -132,6 +132,11 @@
             "alt": "Page carte",
             "class": "img_style2 img_arrondi"
         },
+        "h3Langage": {
+            "tag": "h3",
+            "texte": "Langage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
         "Langage": {
             "tag": "div",
             "class": "div_style1",

@@ -115,6 +115,50 @@
                 "class": "texte_style1"
             }
         },
+        "h3Langage": {
+            "tag": "h3",
+            "texte": "Langage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "Langage": {
+            "tag": "div",
+            "class": "div_style1",
+            "HTML": {
+                "tag": "img",
+                "src": "assets/image/langage/html.png",
+                "alt": "logo HTML",
+                "class": "img_style3"
+            },
+            "CSS": {
+                "tag": "img",
+                "src": "assets/image/langage/css.png",
+                "alt": "logo CSS",
+                "class": "img_style3"
+            },
+            "JS": {
+                "tag": "img",
+                "src": "assets/image/langage/js.webp",
+                "alt": "logo JS",
+                "class": "img_style3"
+            },
+            "JSON": {
+                "tag": "img",
+                "src": "assets/image/langage/json.png",
+                "alt": "logo JSON",
+                "class": "img_style3"
+            }
+        },
+        "h3Outils": {
+            "tag": "h3",
+            "texte": "Outils",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "NODEJS": {
+            "tag": "img",
+            "src": "assets/image/langage/nodejs.png",
+            "alt": "logo JSON",
+            "class": "img_style3"
+        },
         "h3Annexe": {
             "tag": "h3",
             "texte": "Annexe",

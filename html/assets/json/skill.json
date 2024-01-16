@@ -31,9 +31,9 @@
             "phpmyadmin",
             "XAMPP & WAMP",
             "Symfony",
-            "Visual Studio & Visual Studio Code",
             "WordPress",
-            "Grafana"
+            "Grafana",
+            "Docker"
         ],
         "Sécurité": [
             "Clé SSH",

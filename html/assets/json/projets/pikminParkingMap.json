@@ -1,0 +1,107 @@
+{
+    "Pikmin Parking Map": {
+        "Logo": {
+            "tag": "img",
+            "src": "assets/image/projets/pikmin parking map/img_pikmin.jpg",
+            "alt": "image de pikmin",
+            "class": "img_style2 img_arrondi"
+        },
+        "aPikminParkingMap": {
+            "tag": "a",
+            "href": "https://github.com/johanvadenne/Pikmin_Parking_Map",
+            "texte": "https://github.com/johanvadenne/Pikmin_Parking_Map",
+            "target": "blank",
+            "class": "lien_style1"
+        },
+        "h3Description": {
+            "tag": "h3",
+            "texte": "Description",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pDescription": {
+            "tag": "p",
+            "texte": "Utilisé la blibliothèque LeafLet.",
+            "class": "texte_centrer texte_style1"
+        },
+        "h3BibliothequeJS": {
+            "tag": "h3",
+            "texte": "bibliothèque JavaScript",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "aBibliothequeJS": {
+            "tag": "a",
+            "href": "https://leafletjs.com/",
+            "target": "blank",
+            "class": "lien_style1 colonne",
+            "element": {
+                "imgLeaflet": {
+                    "tag": "img",
+                    "src": "assets/image/projets/destination culture/img_leaflet.png",
+                    "alt": "logo Leaflet",
+                    "class": "img_style1"
+                },
+                "pLeaflet": {
+                    "tag": "p",
+                    "texte": "Leaflet",
+                    "class": "texte_centrer texte_style1"
+                }
+            }
+        },
+        "h3Page": {
+            "tag": "h3",
+            "texte": "Langage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "imgPage1": {
+            "tag": "img",
+            "src": "assets/image/projets/pikmin parking map/page1.png",
+            "alt": "imgPage1",
+            "class": "img_style2 img_arrondi"
+        },
+        "imgPage2": {
+            "tag": "img",
+            "src": "assets/image/projets/pikmin parking map/page2.png",
+            "alt": "imgPage2",
+            "class": "img_style2 img_arrondi"
+        },
+        "imgPage3": {
+            "tag": "img",
+            "src": "assets/image/projets/pikmin parking map/page3.png",
+            "alt": "imgPage3",
+            "class": "img_style4 img_arrondi"
+        },
+        "h3Langage": {
+            "tag": "h3",
+            "texte": "Langage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "Langage": {
+            "tag": "div",
+            "class": "div_style1",
+            "HTML": {
+                "tag": "img",
+                "src": "assets/image/langage/html.png",
+                "alt": "logo HTML",
+                "class": "img_style3"
+            },
+            "CSS": {
+                "tag": "img",
+                "src": "assets/image/langage/css.png",
+                "alt": "logo CSS",
+                "class": "img_style3"
+            },
+            "JS": {
+                "tag": "img",
+                "src": "assets/image/langage/js.webp",
+                "alt": "logo JS",
+                "class": "img_style3"
+            },
+            "JSON": {
+                "tag": "img",
+                "src": "assets/image/langage/json.png",
+                "alt": "logo JSON",
+                "class": "img_style3"
+            }
+        }
+    }
+}
