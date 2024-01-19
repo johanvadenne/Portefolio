@@ -44,7 +44,19 @@
         ]
         },
         "BOT veille ": {
-            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/bot.json\")"
+            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/bot.json\")",
+            "syntheseCometence": [
+                "Développer la présence en ligne de l’organisation",
+                "Travailler en mode projet",
+                "Mettre à disposition des utilisateurs un service informatique",
+                "Organiser son développement professionnel"
+        ]
+        },
+        "Portfolio ": {
+        },
+        "Tirage au sort": {
+        },
+        "Gestion stage": {
         }
     }
 }
