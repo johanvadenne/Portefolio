@@ -49,6 +49,31 @@
             "src": "assets/image/projets/bot veille/visu.png",
             "alt": "logo randomuser",
             "class": "img_style2"
+        },
+        "h3Langage": {
+            "tag": "h3",
+            "texte": "Langage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "Langage": {
+            "tag": "div",
+            "class": "div_style1",
+            "PYTHON": {
+                "tag": "img",
+                "src": "assets/image/langage/python.png",
+                "alt": "logo HTML",
+                "class": "img_style3"
+            }
+        },
+        "h3source": {
+            "tag": "h3",
+            "texte": "Source",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "psource": {
+            "tag": "p",
+            "class": "texte_centrer texte_style1",
+            "texte": "lemondeinformatique<br>clubic<br>usine-digitale<br>zdnet<br>nextinpact<br>generation-nt<br>lesnumeriques<br>numerama<br>fredzone<br>presse-citron<br>ginjfo<br>vonguru<br>journaldugeek<br>tomsguide<br>fnac<br>01net<br>korben<br>cowcotland<br>futura-sciences<br>techdows<br>tomshardware<br>journalducoin<br>overclocking<br>maison-et-domotique<br>minimachines<br>3dvf<br>cachem<br>touslesdrivers<br>lesmobiles<br>mac4ever<br>macg<br>frandroid<br>macbidouille<br>iphon<br>toolinux<br>tablette-tactile<br>linuxfr<br>universfreebox<br>monwindows<br>lemagit<br>usinenouvelle<br>silicon<br>lebigdata<br>larevuedudigital<br>programmez<br>legalis<br>zataz<br>gamekult<br>xbox-gamer<br>psmag<br>jeuxvideo<br>p-nintendo<br>gameblog<br>factornews<br>jeuxonline<br>hdnumerique<br>allocine<br>avcesar<br>premiere<br>ecranlarge<br>journaldujapon<br>"
         }
     }
 }
