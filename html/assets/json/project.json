@@ -53,10 +53,18 @@
         ]
         },
         "Portfolio ": {
+            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/portfolio.json\")",
+            "syntheseCometence": [
+                "Développer la présence en ligne de l’organisation",
+                "Travailler en mode projet",
+                "Mettre à disposition des utilisateurs un service informatique"
+        ]
         },
         "Tirage au sort": {
-        },
-        "Gestion stage": {
+            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/trirageRandom.json\")",
+            "syntheseCometence": [
+                "Mettre à disposition des utilisateurs un service informatique"
+        ]
         }
     }
 }

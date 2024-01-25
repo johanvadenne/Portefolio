@@ -1,0 +1,166 @@
+{
+    "Tirage random": {
+        "aDestination_Culture": {
+            "tag": "a",
+            "href": "https://github.com/johanvadenne/tirage-random",
+            "texte": "https://github.com/johanvadenne/tirage-random",
+            "target": "blank",
+            "class": "lien_style1 colonne"
+        },
+        "h3Description": {
+            "tag": "h3",
+            "texte": "Description",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pDescription": {
+            "tag": "p",
+            "texte": "Voici une application de tirage au sort de personnes, développée en utilisant différents langages de programmation. L'application permet de sélectionner aléatoirement une personne parmi une liste de participants jusqu'à ce que tous les participants soient piochés.",
+            "class": "texte_centrer texte_style1"
+        },
+        "h3Aperçu": {
+            "tag": "h3",
+            "texte": "Aperçu",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "h3C#": {
+            "tag": "h3",
+            "texte": "C#",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "LangageC#": {
+            "tag": "div",
+            "class": "div_style1",
+            "VS": {
+                "tag": "img",
+                "src": "assets/image/outils/vs.png",
+                "alt": "logo Visual Code",
+                "class": "img_style3"
+            },
+            "C#": {
+                "tag": "img",
+                "src": "assets/image/langage/CSharp.png",
+                "alt": "logo C#",
+                "class": "img_style3"
+            }
+        },
+        "h3VersionInterfaceC#": {
+            "tag": "h3",
+            "texte": "Version interface",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "img_CsharpApp1C#": {
+            "tag": "img",
+            "src": "assets/image/projets/tirage random/img_CsharpApp1.png",
+            "alt": "Version interface",
+            "class": "img_style2 img_arrondi"
+        },
+        "img_CsharpApp2C#": {
+            "tag": "img",
+            "src": "assets/image/projets/tirage random/img_CsharpApp2.png",
+            "alt": "Version interface",
+            "class": "img_style2 img_arrondi"
+        },
+        "h3VersionTerminalC#": {
+            "tag": "h3",
+            "texte": "Version terminal",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "img_CsharpTerminalC#": {
+            "tag": "img",
+            "src": "assets/image/projets/tirage random/img_CsharpTerminal.png",
+            "alt": "Version interface",
+            "class": "img_style2 img_arrondi"
+        },
+        "h3Python": {
+            "tag": "h3",
+            "texte": "Python",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "LangagePython": {
+            "tag": "div",
+            "class": "div_style1",
+            "PYTHON": {
+                "tag": "img",
+                "src": "assets/image/langage/python.png",
+                "alt": "logo python",
+                "class": "img_style3"
+            }
+        },
+        "h3VersionInterfacePython": {
+            "tag": "h3",
+            "texte": "Version interface",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "img_CsharpApp1Python": {
+            "tag": "img",
+            "src": "assets/image/projets/tirage random/img_PythonApp1.png",
+            "alt": "Version interface",
+            "class": "img_style2 img_arrondi"
+        },
+        "img_CsharpApp2Python": {
+            "tag": "img",
+            "src": "assets/image/projets/tirage random/img_PythonApp2.png",
+            "alt": "Version interface",
+            "class": "img_style2 img_arrondi"
+        },
+        "h3VersionTerminalPython": {
+            "tag": "h3",
+            "texte": "Version terminal",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "img_CsharpTerminalPython": {
+            "tag": "img",
+            "src": "assets/image/projets/tirage random/img_PythonTerminal.png",
+            "alt": "Version interface",
+            "class": "img_style2 img_arrondi"
+        }
+
+
+
+
+        ,
+        "h3Ruby": {
+            "tag": "h3",
+            "texte": "Ruby",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "LangageRuby": {
+            "tag": "div",
+            "class": "div_style1",
+            "RUBY": {
+                "tag": "img",
+                "src": "assets/image/langage/ruby.png",
+                "alt": "logo Ruby",
+                "class": "img_style3"
+            }
+        },
+        "h3VersionInterfaceRuby": {
+            "tag": "h3",
+            "texte": "Version interface",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "img_CsharpApp1Ruby": {
+            "tag": "img",
+            "src": "assets/image/projets/tirage random/img_RubyApp1.png",
+            "alt": "Version interface",
+            "class": "img_style2 img_arrondi"
+        },
+        "img_CsharpApp2Ruby": {
+            "tag": "img",
+            "src": "assets/image/projets/tirage random/img_RubyApp2.png",
+            "alt": "Version interface",
+            "class": "img_style2 img_arrondi"
+        },
+        "h3VersionTerminalRuby": {
+            "tag": "h3",
+            "texte": "Version terminal",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "img_CsharpTerminalRuby": {
+            "tag": "img",
+            "src": "assets/image/projets/tirage random/img_RubyTerminal.png",
+            "alt": "Version interface",
+            "class": "img_style2 img_arrondi"
+        }
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "Portfolio": {
+        "aPortfolio": {
+            "tag": "a",
+            "href": "https://github.com/johanvadenne/Portfolio",
+            "texte": "https://github.com/johanvadenne/Portfolio",
+            "target": "blank",
+            "class": "lien_style1 colonne"
+        },
+        "h3Description": {
+            "tag": "h3",
+            "texte": "Description",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pDescription": {
+            "tag": "p",
+            "texte": "Mon portfolio a été développer par moi-même. Je l'ai déveloper de A à Z sans utiliser de coposant exterieure ou autre. Et sa particularité c'est qu'il à été développer en JavaScript et en JSON.Mon but était d'essayer de construire un site juste en utilisant du JavaScript et de remplacer la strucure HTML en JSON.",
+            "class": "texte_centrer texte_style1"
+        },
+        "h3StructureJSON": {
+            "tag": "h3",
+            "texte": "Structure JSON",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "imgStructureJSON": {
+            "tag": "img",
+            "src": "assets/image/projets/portfolio/img_structureJSON.png",
+            "alt": "structure JSON",
+            "class": "img_style2 img_arrondi"
+        },
+        "h3PagePortfolio": {
+            "tag": "h3",
+            "texte": "Page portfolio",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "imgPagePortfolio": {
+            "tag": "img",
+            "src": "assets/image/projets/portfolio/img_pagePortfolio.png",
+            "alt": "Page portfolio",
+            "class": "img_style2 img_arrondi"
+        },
+        "h3Langage": {
+            "tag": "h3",
+            "texte": "Langage",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "Langage": {
+            "tag": "div",
+            "class": "div_style1",
+            "HTML": {
+                "tag": "img",
+                "src": "assets/image/langage/html.png",
+                "alt": "logo HTML",
+                "class": "img_style3"
+            },
+            "CSS": {
+                "tag": "img",
+                "src": "assets/image/langage/css.png",
+                "alt": "logo CSS",
+                "class": "img_style3"
+            },
+            "JS": {
+                "tag": "img",
+                "src": "assets/image/langage/js.webp",
+                "alt": "logo JS",
+                "class": "img_style3"
+            },
+            "JSON": {
+                "tag": "img",
+                "src": "assets/image/langage/json.png",
+                "alt": "logo JS",
+                "class": "img_style3"
+            }
+        },
+        "h3Conclusion": {
+            "tag": "h3",
+            "texte": "Conclusion",
+            "class": "texte_centrer titre_presentation_h3"
+        },
+        "pConclusion": {
+            "tag": "p",
+            "texte": "J'ai créé ce portfolio avec cette méthode car il me fallait un défi pour me motiver à le développer. à court terme c'est amusant à développer, ça permet de se familiariser avec le JSON et le Javascript. Mais à long terme ce n'est pas optimal, et puis ce n'est pas adapté à tout type de site web. Mon portfolio à une structure simple et répétitive, ce qui aide. Bref amusant, belle découverte mais pas a refaire.",
+            "class": "texte_centrer texte_style1"
+        }
+    }
+}
