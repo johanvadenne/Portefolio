@@ -2,7 +2,7 @@
     "Projet": {
 
         "les frelots": {
-            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/lesFrelots.json\")",
+            "onclick": "afficheProjet(\"http://172.16.197.253:18100/assets/json/projets/lesFrelots.json\")",
             "syntheseCometence": [
                 "Gérer le patrimoine informatique",
                 "Répondre aux incidents et aux demandes d’assistance et d’évolution",
@@ -12,7 +12,7 @@
         ]
         },
         "Flash⚡Badge": {
-            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/flashBadge.json\")",
+            "onclick": "afficheProjet(\"http://172.16.197.253:18100/assets/json/projets/flashBadge.json\")",
             "syntheseCometence": [
                 "Développer la présence en ligne de l’organisation",
                 "Travailler en mode projet",
@@ -20,7 +20,7 @@
         ]
         },
         "pokedex viewer": {
-            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/pokedexViewer.json\")",
+            "onclick": "afficheProjet(\"http://172.16.197.253:18100/assets/json/projets/pokedexViewer.json\")",
             "syntheseCometence": [
                 "Développer la présence en ligne de l’organisation",
                 "Travailler en mode projet",
@@ -28,7 +28,7 @@
         ]
         },
         "Destination Culture": {
-            "onclick": "afficheProjet(\"http://127.0.0.1:18100/assets/json/projets/destinationCulture.json\")",
+            "onclick": "afficheProjet(\"http://172.16.197.253:18100/assets/json/projets/destinationCulture.json\")",
             "syntheseCometence": [
                 "Développer la présence en ligne de l’organisation",
                 "Travailler en mode projet",
