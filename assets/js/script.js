@@ -1,10 +1,10 @@
-const urlquiJeSuisJson = "http://127.0.0.1:18100/assets/json/quiJeSuis.json";
-const urlmaVeilleJson = "http://127.0.0.1:18100/assets/json/maVeille.json";
-const urlheaderLinkJson = "http://127.0.0.1:18100/assets/json/headerLink.json";
-const urlSkillJson = "http://127.0.0.1:18100/assets/json/skill.json";
-const urlProjectJson = "http://127.0.0.1:18100/assets/json/project.json";
-const urlYoutubeJson = "http://127.0.0.1:18100/assets/json/youtube.json";
-const urlGitHubJson = "http://127.0.0.1:18100/assets/json/github.json";
+const urlquiJeSuisJson = "http://172.16.197.253:18100/assets/json/quiJeSuis.json";
+const urlmaVeilleJson = "http://172.16.197.253:18100/assets/json/maVeille.json";
+const urlheaderLinkJson = "http://172.16.197.253:18100/assets/json/headerLink.json";
+const urlSkillJson = "http://172.16.197.253:18100/assets/json/skill.json";
+const urlProjectJson = "http://172.16.197.253:18100/assets/json/project.json";
+const urlYoutubeJson = "http://172.16.197.253:18100/assets/json/youtube.json";
+const urlGitHubJson = "http://172.16.197.253:18100/assets/json/github.json";
 const HTML = new CL_HTML;
 
 const indexSectionPere = document.getElementById("index_section_pere");
