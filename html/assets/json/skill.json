@@ -21,7 +21,8 @@
             "C++",
             "C",
             "RUST",
-            "SQL"
+            "SQL",
+            "ASSEMBLEUR"
         ],
         "Outils":
         [
