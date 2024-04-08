@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johan Vadenne</title>
+    <link rel="stylesheet" href="../assets/style/style_talwind.css">
     <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="icon" type="image/vnd.icon" href="../assets/image/icon/img_web.png">
 </head>
 
 <body class="font-sans leading-normal tracking-normal">
 
     <!-- Première section qui prend toute la page -->
-    <section class="h-screen bg-blue-100">
+    <section class="min-h-screen bg-blue-100">
         <h1 class="text-7xl font-bold text-center">Johan Vadenne</h1>
         <div class="grid grid-cols-2">
             <div class="m-auto">
@@ -38,7 +40,7 @@
 
         </div>
     </section>
-    <section class="h-screen bg-blue-200">
+    <section class="min-h-screen bg-blue-200">
         <h1 class="text-7xl font-bold text-center">Ma veille</h1>
         <div class="grid grid-cols-2">
             <div class="flex ml-16 mt-8">
@@ -54,47 +56,80 @@
                 <div>
                     <h2 class="text-center text-4xl font-bold">Chaine Youtube</h2><br>
                     <div class="grid grid-cols-3 gap-4 w-1/2 m-auto">
-                        <a target="_blank" href="https://www.youtube.com/@BenjaminCode"><img class="rounded-full" src="../assets/image/youtube/benjamin code.jpg" alt=""></a>
-                        <a target="_blank" href="https://www.youtube.com/@Fireship"><img class="rounded-full" src="../assets/image/youtube/fireship.jpg" alt=""></a>
-                        <a target="_blank" href="https://www.youtube.com/@LeoDuff"><img class="rounded-full" src="../assets/image/youtube/leoduff.jpg" alt=""></a>
-                        <a target="_blank" href="https://www.youtube.com/@Micode"><img class="rounded-full" src="../assets/image/youtube/micode.jpg" alt=""></a>
-                        <a target="_blank" href="https://www.youtube.com/@NetworkChuck"><img class="rounded-full" src="../assets/image/youtube/netwokchuck.jpg" alt=""></a>
-                        <a target="_blank" href="https://www.youtube.com/@Underscore_"><img class="rounded-full" src="../assets/image/youtube/underscore.jpg" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/@BenjaminCode"><img class="rounded-full transition-transform hover:scale-110" src="../assets/image/youtube/benjamin code.jpg" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/@Fireship"><img class="rounded-full transition-transform hover:scale-110" src="../assets/image/youtube/fireship.jpg" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/@LeoDuff"><img class="rounded-full transition-transform hover:scale-110" src="../assets/image/youtube/leoduff.jpg" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/@Micode"><img class="rounded-full transition-transform hover:scale-110" src="../assets/image/youtube/micode.jpg" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/@NetworkChuck"><img class="rounded-full transition-transform hover:scale-110" src="../assets/image/youtube/netwokchuck.jpg" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/@Underscore_"><img class="rounded-full transition-transform hover:scale-110" src="../assets/image/youtube/underscore.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="mt-16">
                     <h2 class="text-center text-4xl font-bold">GitHub</h2><br>
                     <div class="grid grid-cols-2 gap-4 w-1/2 m-auto">
-                        <a target="_blank" href="https://github.com/htr-tech"><img class="rounded-full w-2/3 m-auto" src="../assets/image/github/tahmid.png" alt=""></a>
-                        <a target="_blank" href="https://github.com/LiliwoL"><img class="rounded-full w-2/3 m-auto" src="../assets/image/github/nicola.png" alt=""></a>
+                        <a target="_blank" href="https://github.com/htr-tech"><img class="rounded-full w-2/3 m-auto transition-transform hover:scale-110" src="../assets/image/github/tahmid.png" alt=""></a>
+                        <a target="_blank" href="https://github.com/LiliwoL"><img class="rounded-full w-2/3 m-auto transition-transform hover:scale-110" src="../assets/image/github/nicola.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="h-screen bg-blue-300">
+    <section id="projets" class="min-h-screen bg-blue-300">
         <h1 class="text-7xl font-bold text-center">Mes projets</h1>
-        <div class="grid grid-cols-4">
-            <div>
-                <img class="rounded-2xl m-auto h-56" src="../assets/image/logo projet/horo.png" alt="">
+        <div class="flex flex-wrap justify-center mt-10">
+            <div class="w-1/4">
+                <a href="./Flash⚡Badge.html" class=" h-full flex flex-col items-center transition-transform hover:scale-110">
+                    <img class="h-1/2" src="../assets/image/logo projet/horo.png" alt="">
+                    <p class="text-2xl font-bold">Flash⚡Badge</p>
+                </a>
             </div>
-            <div>
-                <img class="rounded-2xl m-auto h-56" src="../assets/image/logo projet/img_pikmin_min.jpg" alt="">
+            <div class="w-1/4">
+                <a href="./PikminParkingPark.html" class=" h-full flex flex-col items-center transition-transform hover:scale-110">
+                    <img class="h-1/2" src="../assets/image/logo projet/img_pikmin_min.jpg" alt="">
+                    <p class="text-2xl font-bold">Pikmin Parking Park</p>
+                </a>
             </div>
-            <div>
-                <img class="m-auto h-56" src="../assets/image/logo projet/img_pokeball.png" alt="">
+            <div class="w-1/4">
+                <a href="#" class=" h-full flex flex-col items-center transition-transform hover:scale-110">
+                    <img class="h-1/2" src="../assets/image/logo projet/img_pokeball.png" alt="">
+                    <p class="text-2xl font-bold">Pokedex Viewer</p>
+                </a>
             </div>
-            <div>
-                <img class="m-auto h-56" src="../assets/image/logo projet/planete-min.png" alt="">
+            <div class="w-1/4">
+                <a href="#" class=" h-full flex flex-col items-center transition-transform hover:scale-110">
+                    <img class="h-1/2" src="../assets/image/logo projet/planete-min.png" alt="">
+                    <p class="text-2xl font-bold">Destination Culture</p>
+                </a>
             </div>
-            <div>
-                <img class="m-auto h-56" src="../assets/image/logo projet/tirage-min.png" alt="">
+            <div class="w-1/4">
+                <a href="#" class=" h-full flex flex-col items-center transition-transform hover:scale-110">
+                    <img class="h-1/2" src="../assets/image/logo projet/tirage-min.png" alt="">
+                    <p class="text-2xl font-bold">Tirage au sort</p>
+                </a>
             </div>
-            <div>
-                <img class="m-auto h-56" src="../assets/image/logo projet/stage-min.png" alt="">
+            <div class="w-1/4">
+                <a href="#" class=" h-full flex flex-col items-center transition-transform hover:scale-110">
+                    <img class="h-1/2" src="../assets/image/logo projet/stage-min.png" alt="">
+                    <p class="text-2xl font-bold">Gestion Stage&Apprentissage</p>
+                </a>
             </div>
-            <div>
-                <img class="rounded-2xl m-auto h-56" src="../assets/image/logo projet/gestion_message_systeme.png" alt="">
+            <div class="w-1/4">
+                <a href="#" class=" h-full flex flex-col items-center transition-transform hover:scale-110">
+                    <img class="h-1/2" src="../assets/image/logo projet/gestion_message_systeme.png" alt="">
+                    <p class="text-2xl font-bold">Gestion Message Système</p>
+                </a>
+            </div>
+            <div class="w-1/4">
+                <a href="#" class=" h-full flex flex-col items-center transition-transform hover:scale-110">
+                    <img class="h-1/2" src="../assets/image/logo projet/Portfolio.png" alt="">
+                    <p class="text-2xl font-bold">Portfolio</p>
+                </a>
+            </div>
+            <div class="w-1/4">
+                <a href="#" class=" h-full flex flex-col items-center transition-transform hover:scale-110">
+                    <img class="h-1/2" src="../assets/image//logo/bot.png" alt="">
+                    <p class="text-2xl font-bold">BOT Veille Informatique</p>
+                </a>
             </div>
         </div>
     </section>
